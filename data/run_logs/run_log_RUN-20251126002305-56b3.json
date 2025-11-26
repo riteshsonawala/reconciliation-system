@@ -1,0 +1,4047 @@
+{
+  "run_id": "RUN-20251126002305-56b3",
+  "status": "COMPLETED_WITH_DISCREPANCIES",
+  "start_timestamp": "2025-11-26T00:23:05.769375",
+  "end_timestamp": "2025-11-26T00:23:05.773300",
+  "duration_seconds": 0.003925,
+  "volume_comparison": {
+    "source_system": "Payment Platform",
+    "target_system": "Compliance System",
+    "source_total": 300,
+    "target_total": 307,
+    "matched_count": 234,
+    "unmatched_count": 66,
+    "volume_difference": 7,
+    "match_rate": 78.0
+  },
+  "discrepancy_summary": {
+    "run_id": "RUN-20251126002305-56b3",
+    "total_discrepancies": 95,
+    "by_type": {
+      "missing_records": 46,
+      "unmatched_transactions": 20,
+      "duplicate_records": 28,
+      "count_discrepancies": 1
+    },
+    "by_severity": {
+      "critical": 0,
+      "high": 88,
+      "medium": 7,
+      "low": 0
+    }
+  },
+  "exception_list": [
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0001",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000006",
+      "description": "Transaction TXN000006 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.008",
+          "transaction_id": "TXN000006",
+          "amount": 2840302.59,
+          "currency": "USD",
+          "value_date": "2025-11-25",
+          "debtor_name": "International Exports SA",
+          "debtor_account": "GB5349488647946329",
+          "debtor_bic": "CRESCHZZXXX",
+          "creditor_name": "Worldwide Logistics",
+          "creditor_account": "GB8438710938821510",
+          "creditor_bic": "HSBCGB2LXXX",
+          "remittance_info": "Invoice payment 2615",
+          "instruction_id": "INST202511252354421078",
+          "end_to_end_id": "E2E202511252354427529"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.769932"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0002",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000011",
+      "description": "Transaction TXN000011 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.008",
+          "transaction_id": "TXN000011",
+          "amount": 558426.25,
+          "currency": "USD",
+          "value_date": "2025-11-25",
+          "debtor_name": "Finance Solutions GmbH",
+          "debtor_account": "GB6915753488184019",
+          "debtor_bic": "UBSWCHZHXXX",
+          "creditor_name": "International Exports SA",
+          "creditor_account": "GB7736275757841778",
+          "creditor_bic": "CRESCHZZXXX",
+          "remittance_info": "Invoice payment 3326",
+          "instruction_id": "INST202511252354426235",
+          "end_to_end_id": "E2E202511252354421054"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.769985"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0003",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000013",
+      "description": "Transaction TXN000013 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.008",
+          "transaction_id": "TXN000013",
+          "amount": 2435130.9,
+          "currency": "CHF",
+          "value_date": "2025-11-25",
+          "debtor_name": "Trading Partners LLC",
+          "debtor_account": "GB3397367429495805",
+          "debtor_bic": "DEUTDEFFXXX",
+          "creditor_name": "Finance Solutions GmbH",
+          "creditor_account": "GB6883875614101705",
+          "creditor_bic": "CITIUS33XXX",
+          "remittance_info": "Invoice payment 4338",
+          "instruction_id": "INST202511252354423326",
+          "end_to_end_id": "E2E202511252354422202"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770020"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0004",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000022",
+      "description": "Transaction TXN000022 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.008",
+          "transaction_id": "TXN000022",
+          "amount": 1589105.06,
+          "currency": "CHF",
+          "value_date": "2025-11-25",
+          "debtor_name": "Finance Solutions GmbH",
+          "debtor_account": "GB5583735021940475",
+          "debtor_bic": "UBSWCHZHXXX",
+          "creditor_name": "Worldwide Logistics",
+          "creditor_account": "GB1204877620832689",
+          "creditor_bic": "CRESCHZZXXX",
+          "remittance_info": "Invoice payment 6111",
+          "instruction_id": "INST202511252354422307",
+          "end_to_end_id": "E2E202511252354429824"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770049"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0005",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000035",
+      "description": "Transaction TXN000035 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.008",
+          "transaction_id": "TXN000035",
+          "amount": 1882403.17,
+          "currency": "EUR",
+          "value_date": "2025-11-25",
+          "debtor_name": "TechVentures Inc",
+          "debtor_account": "GB3467930987488699",
+          "debtor_bic": "CHASUS33XXX",
+          "creditor_name": "Acme Corporation",
+          "creditor_account": "GB4583837075994777",
+          "creditor_bic": "CRESCHZZXXX",
+          "remittance_info": "Invoice payment 2634",
+          "instruction_id": "INST202511252354426572",
+          "end_to_end_id": "E2E202511252354424244"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770070"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0006",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000041",
+      "description": "Transaction TXN000041 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.008",
+          "transaction_id": "TXN000041",
+          "amount": 2475541.76,
+          "currency": "USD",
+          "value_date": "2025-11-25",
+          "debtor_name": "Acme Corporation",
+          "debtor_account": "GB1365820411706542",
+          "debtor_bic": "HSBCGB2LXXX",
+          "creditor_name": "Continental Industries",
+          "creditor_account": "GB7810414484999533",
+          "creditor_bic": "CRESCHZZXXX",
+          "remittance_info": "Invoice payment 3742",
+          "instruction_id": "INST202511252354428110",
+          "end_to_end_id": "E2E202511252354423820"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770093"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0007",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000048",
+      "description": "Transaction TXN000048 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.008",
+          "transaction_id": "TXN000048",
+          "amount": 4199545.37,
+          "currency": "EUR",
+          "value_date": "2025-11-25",
+          "debtor_name": "TechVentures Inc",
+          "debtor_account": "GB4329414121211073",
+          "debtor_bic": "DEUTDEFFXXX",
+          "creditor_name": "Acme Corporation",
+          "creditor_account": "GB2722390211701591",
+          "creditor_bic": "BNPAFRPPXXX",
+          "remittance_info": "Invoice payment 9399",
+          "instruction_id": "INST202511252354421563",
+          "end_to_end_id": "E2E202511252354428042"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770113"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0008",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000056",
+      "description": "Transaction TXN000056 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.008",
+          "transaction_id": "TXN000056",
+          "amount": 4484006.85,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "debtor_name": "Premium Services Ltd",
+          "debtor_account": "GB6037671366585545",
+          "debtor_bic": "CRESCHZZXXX",
+          "creditor_name": "Premium Services Ltd",
+          "creditor_account": "GB5896840828480626",
+          "creditor_bic": "HSBCGB2LXXX",
+          "remittance_info": "Invoice payment 1478",
+          "instruction_id": "INST202511252354429368",
+          "end_to_end_id": "E2E202511252354424738"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770131"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0009",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000061",
+      "description": "Transaction TXN000061 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.008",
+          "transaction_id": "TXN000061",
+          "amount": 284944.69,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "debtor_name": "Premium Services Ltd",
+          "debtor_account": "GB2401713119739795",
+          "debtor_bic": "CRESCHZZXXX",
+          "creditor_name": "TechVentures Inc",
+          "creditor_account": "GB6668146956487559",
+          "creditor_bic": "CITIUS33XXX",
+          "remittance_info": "Invoice payment 6198",
+          "instruction_id": "INST202511252354423053",
+          "end_to_end_id": "E2E202511252354426846"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770164"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0010",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000077",
+      "description": "Transaction TXN000077 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000077",
+          "amount": 1298364.9,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "instructing_agent": "CHASUS33XXX",
+          "instructed_agent": "UBSWCHZHXXX",
+          "creditor_institution": "CRESCHZZXXX",
+          "debtor_institution": "UBSWCHZHXXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354424976",
+          "end_to_end_id": "E2E202511252354423985",
+          "purpose": "INTC"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770181"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0011",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000081",
+      "description": "Transaction TXN000081 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000081",
+          "amount": 2547687.77,
+          "currency": "EUR",
+          "value_date": "2025-11-25",
+          "instructing_agent": "BARCGB22XXX",
+          "instructed_agent": "BARCGB22XXX",
+          "creditor_institution": "BARCGB22XXX",
+          "debtor_institution": "CRESCHZZXXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354428439",
+          "end_to_end_id": "E2E202511252354423528",
+          "purpose": "INTC"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770197"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0012",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000083",
+      "description": "Transaction TXN000083 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000083",
+          "amount": 102966.76,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "instructing_agent": "BNPAFRPPXXX",
+          "instructed_agent": "HSBCGB2LXXX",
+          "creditor_institution": "UBSWCHZHXXX",
+          "debtor_institution": "HSBCGB2LXXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354423436",
+          "end_to_end_id": "E2E202511252354421671",
+          "purpose": "INTC"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770213"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0013",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000091",
+      "description": "Transaction TXN000091 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000091",
+          "amount": 1165363.54,
+          "currency": "EUR",
+          "value_date": "2025-11-25",
+          "instructing_agent": "DEUTDEFFXXX",
+          "instructed_agent": "DEUTDEFFXXX",
+          "creditor_institution": "CRESCHZZXXX",
+          "debtor_institution": "HSBCGB2LXXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354425768",
+          "end_to_end_id": "E2E202511252354423583",
+          "purpose": "INTC"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770229"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0014",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000100",
+      "description": "Transaction TXN000100 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000100",
+          "amount": 4734170.69,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "instructing_agent": "HSBCGB2LXXX",
+          "instructed_agent": "UBSWCHZHXXX",
+          "creditor_institution": "BARCGB22XXX",
+          "debtor_institution": "CITIUS33XXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354428407",
+          "end_to_end_id": "E2E202511252354427341",
+          "purpose": "INTC"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770245"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0015",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000103",
+      "description": "Transaction TXN000103 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000103",
+          "amount": 116500.09,
+          "currency": "CHF",
+          "value_date": "2025-11-25",
+          "instructing_agent": "CHASUS33XXX",
+          "instructed_agent": "UBSWCHZHXXX",
+          "creditor_institution": "UBSWCHZHXXX",
+          "debtor_institution": "HSBCGB2LXXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354427016",
+          "end_to_end_id": "E2E202511252354427099",
+          "purpose": "INTC"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770261"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0016",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000104",
+      "description": "Transaction TXN000104 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000104",
+          "amount": 3943004.24,
+          "currency": "USD",
+          "value_date": "2025-11-25",
+          "instructing_agent": "DEUTDEFFXXX",
+          "instructed_agent": "CITIUS33XXX",
+          "creditor_institution": "UBSWCHZHXXX",
+          "debtor_institution": "BARCGB22XXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354427719",
+          "end_to_end_id": "E2E202511252354429214",
+          "purpose": "INTC"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770286"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0017",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000111",
+      "description": "Transaction TXN000111 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000111",
+          "amount": 261426.63,
+          "currency": "USD",
+          "value_date": "2025-11-25",
+          "instructing_agent": "CITIUS33XXX",
+          "instructed_agent": "CHASUS33XXX",
+          "creditor_institution": "CRESCHZZXXX",
+          "debtor_institution": "HSBCGB2LXXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354425403",
+          "end_to_end_id": "E2E202511252354429434",
+          "purpose": "INTC"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770302"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0018",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000112",
+      "description": "Transaction TXN000112 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000112",
+          "amount": 3333598.42,
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "instructing_agent": "CRESCHZZXXX",
+          "instructed_agent": "CRESCHZZXXX",
+          "creditor_institution": "BNPAFRPPXXX",
+          "debtor_institution": "BARCGB22XXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354426430",
+          "end_to_end_id": "E2E202511252354424121",
+          "purpose": "INTC"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770317"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0019",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000124",
+      "description": "Transaction TXN000124 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000124",
+          "amount": 4215292.25,
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "instructing_agent": "CRESCHZZXXX",
+          "instructed_agent": "DEUTDEFFXXX",
+          "creditor_institution": "CITIUS33XXX",
+          "debtor_institution": "CITIUS33XXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354422706",
+          "end_to_end_id": "E2E202511252354429841",
+          "purpose": "INTC"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770333"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0020",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000125",
+      "description": "Transaction TXN000125 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000125",
+          "amount": 1000819.66,
+          "currency": "CHF",
+          "value_date": "2025-11-25",
+          "instructing_agent": "CHASUS33XXX",
+          "instructed_agent": "DEUTDEFFXXX",
+          "creditor_institution": "CITIUS33XXX",
+          "debtor_institution": "CITIUS33XXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354425543",
+          "end_to_end_id": "E2E202511252354427760",
+          "purpose": "INTC"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770349"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0021",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000128",
+      "description": "Transaction TXN000128 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000128",
+          "amount": 4136872.52,
+          "currency": "CHF",
+          "value_date": "2025-11-25",
+          "instructing_agent": "CRESCHZZXXX",
+          "instructed_agent": "HSBCGB2LXXX",
+          "creditor_institution": "BARCGB22XXX",
+          "debtor_institution": "UBSWCHZHXXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354429185",
+          "end_to_end_id": "E2E202511252354421054",
+          "purpose": "INTC"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770364"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0022",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000133",
+      "description": "Transaction TXN000133 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000133",
+          "amount": 1146907.53,
+          "currency": "CHF",
+          "value_date": "2025-11-25",
+          "instructing_agent": "UBSWCHZHXXX",
+          "instructed_agent": "DEUTDEFFXXX",
+          "creditor_institution": "UBSWCHZHXXX",
+          "debtor_institution": "HSBCGB2LXXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354423300",
+          "end_to_end_id": "E2E202511252354425880",
+          "purpose": "INTC"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770380"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0023",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000134",
+      "description": "Transaction TXN000134 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000134",
+          "amount": 945340.71,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "instructing_agent": "HSBCGB2LXXX",
+          "instructed_agent": "CITIUS33XXX",
+          "creditor_institution": "DEUTDEFFXXX",
+          "debtor_institution": "CRESCHZZXXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354425945",
+          "end_to_end_id": "E2E202511252354429459",
+          "purpose": "INTC"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770395"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0024",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000135",
+      "description": "Transaction TXN000135 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000135",
+          "amount": 4790834.21,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "instructing_agent": "CHASUS33XXX",
+          "instructed_agent": "BARCGB22XXX",
+          "creditor_institution": "CRESCHZZXXX",
+          "debtor_institution": "DEUTDEFFXXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354425363",
+          "end_to_end_id": "E2E202511252354422750",
+          "purpose": "INTC"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770412"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0025",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000136",
+      "description": "Transaction TXN000136 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000136",
+          "amount": 634963.38,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "instructing_agent": "DEUTDEFFXXX",
+          "instructed_agent": "BARCGB22XXX",
+          "creditor_institution": "DEUTDEFFXXX",
+          "debtor_institution": "CHASUS33XXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354422135",
+          "end_to_end_id": "E2E202511252354428477",
+          "purpose": "INTC"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770428"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0026",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000142",
+      "description": "Transaction TXN000142 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000142",
+          "amount": 3136292.01,
+          "currency": "EUR",
+          "value_date": "2025-11-25",
+          "instructing_agent": "BARCGB22XXX",
+          "instructed_agent": "BARCGB22XXX",
+          "creditor_institution": "CRESCHZZXXX",
+          "debtor_institution": "CHASUS33XXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354425242",
+          "end_to_end_id": "E2E202511252354426078",
+          "purpose": "INTC"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770443"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0027",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000144",
+      "description": "Transaction TXN000144 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000144",
+          "amount": 2645817.3,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "instructing_agent": "HSBCGB2LXXX",
+          "instructed_agent": "CHASUS33XXX",
+          "creditor_institution": "BNPAFRPPXXX",
+          "debtor_institution": "BARCGB22XXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354424235",
+          "end_to_end_id": "E2E202511252354423011",
+          "purpose": "INTC"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770458"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0028",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000145",
+      "description": "Transaction TXN000145 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000145",
+          "amount": 1851873.52,
+          "currency": "CHF",
+          "value_date": "2025-11-25",
+          "instructing_agent": "BNPAFRPPXXX",
+          "instructed_agent": "HSBCGB2LXXX",
+          "creditor_institution": "BNPAFRPPXXX",
+          "debtor_institution": "BNPAFRPPXXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354421539",
+          "end_to_end_id": "E2E202511252354423675",
+          "purpose": "INTC"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770472"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0029",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000150",
+      "description": "Transaction TXN000150 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000150",
+          "amount": 4835490.73,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "instructing_agent": "CRESCHZZXXX",
+          "instructed_agent": "CITIUS33XXX",
+          "creditor_institution": "CHASUS33XXX",
+          "debtor_institution": "BARCGB22XXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354426452",
+          "end_to_end_id": "E2E202511252354425981",
+          "purpose": "INTC"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770486"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0030",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000160",
+      "description": "Transaction TXN000160 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "MT103",
+          "transaction_id": "TXN000160",
+          "transaction_reference": "MT103202511252354424037",
+          "amount": 2962186.03,
+          "currency": "USD",
+          "value_date": "2025-11-25",
+          "ordering_customer": "Trading Partners LLC",
+          "ordering_institution": "UBSWCHZHXXX",
+          "beneficiary_customer": "International Exports SA",
+          "beneficiary_institution": "HSBCGB2LXXX",
+          "intermediary_institution": null,
+          "sender_to_receiver_info": "Payment for services 3365",
+          "remittance_info": "Invoice 55196"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770502"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0031",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000185",
+      "description": "Transaction TXN000185 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "MT103",
+          "transaction_id": "TXN000185",
+          "transaction_reference": "MT103202511252354423872",
+          "amount": 1348106.46,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "ordering_customer": "Trading Partners LLC",
+          "ordering_institution": "HSBCGB2LXXX",
+          "beneficiary_customer": "Worldwide Logistics",
+          "beneficiary_institution": "HSBCGB2LXXX",
+          "intermediary_institution": "DEUTDEFFXXX",
+          "sender_to_receiver_info": "Payment for services 6195",
+          "remittance_info": "Invoice 54496"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770517"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0032",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000193",
+      "description": "Transaction TXN000193 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "MT103",
+          "transaction_id": "TXN000193",
+          "transaction_reference": "MT103202511252354421003",
+          "amount": 2795716.39,
+          "currency": "CHF",
+          "value_date": "2025-11-25",
+          "ordering_customer": "Worldwide Logistics",
+          "ordering_institution": "CHASUS33XXX",
+          "beneficiary_customer": "Trading Partners LLC",
+          "beneficiary_institution": "BNPAFRPPXXX",
+          "intermediary_institution": "CRESCHZZXXX",
+          "sender_to_receiver_info": "Payment for services 8345",
+          "remittance_info": "Invoice 34865"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770532"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0033",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000194",
+      "description": "Transaction TXN000194 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "MT103",
+          "transaction_id": "TXN000194",
+          "transaction_reference": "MT103202511252354429700",
+          "amount": 1528626.06,
+          "currency": "CHF",
+          "value_date": "2025-11-25",
+          "ordering_customer": "Premium Services Ltd",
+          "ordering_institution": "HSBCGB2LXXX",
+          "beneficiary_customer": "Worldwide Logistics",
+          "beneficiary_institution": "DEUTDEFFXXX",
+          "intermediary_institution": "BNPAFRPPXXX",
+          "sender_to_receiver_info": "Payment for services 5892",
+          "remittance_info": "Invoice 70447"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770548"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0034",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000197",
+      "description": "Transaction TXN000197 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "MT103",
+          "transaction_id": "TXN000197",
+          "transaction_reference": "MT103202511252354424379",
+          "amount": 4264182.21,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "ordering_customer": "Global Trading Ltd",
+          "ordering_institution": "CITIUS33XXX",
+          "beneficiary_customer": "Continental Industries",
+          "beneficiary_institution": "DEUTDEFFXXX",
+          "intermediary_institution": "CHASUS33XXX",
+          "sender_to_receiver_info": "Payment for services 7946",
+          "remittance_info": "Invoice 83479"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770563"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0035",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000198",
+      "description": "Transaction TXN000198 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "MT103",
+          "transaction_id": "TXN000198",
+          "transaction_reference": "MT103202511252354421538",
+          "amount": 109765.64,
+          "currency": "USD",
+          "value_date": "2025-11-25",
+          "ordering_customer": "Continental Industries",
+          "ordering_institution": "HSBCGB2LXXX",
+          "beneficiary_customer": "Acme Corporation",
+          "beneficiary_institution": "HSBCGB2LXXX",
+          "intermediary_institution": "CHASUS33XXX",
+          "sender_to_receiver_info": "Payment for services 1367",
+          "remittance_info": "Invoice 55636"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770578"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0036",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000218",
+      "description": "Transaction TXN000218 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "MT103",
+          "transaction_id": "TXN000218",
+          "transaction_reference": "MT103202511252354429552",
+          "amount": 1072279.72,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "ordering_customer": "Continental Industries",
+          "ordering_institution": "UBSWCHZHXXX",
+          "beneficiary_customer": "International Exports SA",
+          "beneficiary_institution": "UBSWCHZHXXX",
+          "intermediary_institution": "CHASUS33XXX",
+          "sender_to_receiver_info": "Payment for services 4307",
+          "remittance_info": "Invoice 37957"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770592"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0037",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000220",
+      "description": "Transaction TXN000220 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "MT103",
+          "transaction_id": "TXN000220",
+          "transaction_reference": "MT103202511252354424577",
+          "amount": 2931149.57,
+          "currency": "USD",
+          "value_date": "2025-11-25",
+          "ordering_customer": "Global Trading Ltd",
+          "ordering_institution": "CRESCHZZXXX",
+          "beneficiary_customer": "Global Trading Ltd",
+          "beneficiary_institution": "BNPAFRPPXXX",
+          "intermediary_institution": null,
+          "sender_to_receiver_info": "Payment for services 6048",
+          "remittance_info": "Invoice 55829"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770611"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0038",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000225",
+      "description": "Transaction TXN000225 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "MT103",
+          "transaction_id": "TXN000225",
+          "transaction_reference": "MT103202511252354423946",
+          "amount": 1515009.1,
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "ordering_customer": "International Exports SA",
+          "ordering_institution": "DEUTDEFFXXX",
+          "beneficiary_customer": "Global Trading Ltd",
+          "beneficiary_institution": "BNPAFRPPXXX",
+          "intermediary_institution": null,
+          "sender_to_receiver_info": "Payment for services 1586",
+          "remittance_info": "Invoice 78203"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770625"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0039",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000244",
+      "description": "Transaction TXN000244 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000244",
+          "transaction_reference": "MT202202511252354427120",
+          "amount": 3360169.67,
+          "currency": "EUR",
+          "value_date": "2025-11-25",
+          "ordering_institution": "UBSWCHZHXXX",
+          "beneficiary_institution": "UBSWCHZHXXX",
+          "sender_correspondent": "HSBCGB2LXXX",
+          "receiver_correspondent": "DEUTDEFFXXX",
+          "intermediary": null,
+          "related_reference": "REL202511252354428725"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770640"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0040",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000249",
+      "description": "Transaction TXN000249 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000249",
+          "transaction_reference": "MT202202511252354428532",
+          "amount": 2020365.88,
+          "currency": "EUR",
+          "value_date": "2025-11-25",
+          "ordering_institution": "CITIUS33XXX",
+          "beneficiary_institution": "CITIUS33XXX",
+          "sender_correspondent": "CITIUS33XXX",
+          "receiver_correspondent": "HSBCGB2LXXX",
+          "intermediary": "UBSWCHZHXXX",
+          "related_reference": "REL202511252354422595"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770657"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0041",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000275",
+      "description": "Transaction TXN000275 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000275",
+          "transaction_reference": "MT202202511252354424481",
+          "amount": 4179016.45,
+          "currency": "USD",
+          "value_date": "2025-11-25",
+          "ordering_institution": "DEUTDEFFXXX",
+          "beneficiary_institution": "DEUTDEFFXXX",
+          "sender_correspondent": "HSBCGB2LXXX",
+          "receiver_correspondent": "DEUTDEFFXXX",
+          "intermediary": null,
+          "related_reference": "REL202511252354423348"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770675"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0042",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000283",
+      "description": "Transaction TXN000283 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000283",
+          "transaction_reference": "MT202202511252354429420",
+          "amount": 1143104.79,
+          "currency": "EUR",
+          "value_date": "2025-11-25",
+          "ordering_institution": "CHASUS33XXX",
+          "beneficiary_institution": "UBSWCHZHXXX",
+          "sender_correspondent": "HSBCGB2LXXX",
+          "receiver_correspondent": "BARCGB22XXX",
+          "intermediary": null,
+          "related_reference": "REL202511252354429223"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770691"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0043",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000286",
+      "description": "Transaction TXN000286 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000286",
+          "transaction_reference": "MT202202511252354424761",
+          "amount": 3331788.93,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "ordering_institution": "BARCGB22XXX",
+          "beneficiary_institution": "CRESCHZZXXX",
+          "sender_correspondent": "BNPAFRPPXXX",
+          "receiver_correspondent": "BNPAFRPPXXX",
+          "intermediary": null,
+          "related_reference": "REL202511252354422955"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770706"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0044",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000287",
+      "description": "Transaction TXN000287 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000287",
+          "transaction_reference": "MT202202511252354424241",
+          "amount": 3553885.57,
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "ordering_institution": "BARCGB22XXX",
+          "beneficiary_institution": "BNPAFRPPXXX",
+          "sender_correspondent": "CHASUS33XXX",
+          "receiver_correspondent": "BARCGB22XXX",
+          "intermediary": null,
+          "related_reference": "REL202511252354425643"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770720"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0045",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000291",
+      "description": "Transaction TXN000291 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000291",
+          "transaction_reference": "MT202202511252354422952",
+          "amount": 642127.13,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "ordering_institution": "UBSWCHZHXXX",
+          "beneficiary_institution": "CITIUS33XXX",
+          "sender_correspondent": "BARCGB22XXX",
+          "receiver_correspondent": "CITIUS33XXX",
+          "intermediary": null,
+          "related_reference": "REL202511252354427962"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770735"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0046",
+      "discrepancy_type": "missing_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000299",
+      "description": "Transaction TXN000299 missing in Compliance System",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000299",
+          "transaction_reference": "MT202202511252354425088",
+          "amount": 489187.07,
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "ordering_institution": "CHASUS33XXX",
+          "beneficiary_institution": "CRESCHZZXXX",
+          "sender_correspondent": "CRESCHZZXXX",
+          "receiver_correspondent": "CHASUS33XXX",
+          "intermediary": null,
+          "related_reference": "REL202511252354429674"
+        },
+        "expected_in": "Compliance System",
+        "present_in": "Payment Platform"
+      },
+      "timestamp": "2025-11-26T00:23:05.770751"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0047",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000047",
+      "description": "Transaction TXN000047 appears 4 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 4,
+        "primary_transaction": {
+          "message_type": "pacs.008",
+          "transaction_id": "TXN000047",
+          "amount": 3497575.77,
+          "currency": "USD",
+          "value_date": "2025-11-25",
+          "debtor_name": "Global Trading Ltd",
+          "debtor_account": "GB8347688983276226",
+          "debtor_bic": "BARCGB22XXX",
+          "creditor_name": "Premium Services Ltd",
+          "creditor_account": "GB3168273137777636",
+          "creditor_bic": "CHASUS33XXX",
+          "remittance_info": "Invoice payment 9952",
+          "instruction_id": "INST202511252354429274",
+          "end_to_end_id": "E2E202511252354425318"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000047",
+            "message_type": "pacs.008",
+            "amount": "3497575.77",
+            "currency": "USD",
+            "value_date": "2025-11-25",
+            "debtor_name": "Global Trading Ltd",
+            "debtor_account": "GB8347688983276226",
+            "creditor_name": "Premium Services Ltd",
+            "creditor_account": "GB3168273137777636",
+            "end_to_end_id": "E2E202511252354425318"
+          },
+          {
+            "transaction_id": "TXN000047",
+            "message_type": "pacs.008",
+            "amount": "3497575.77",
+            "currency": "USD",
+            "value_date": "2025-11-25",
+            "debtor_name": "Global Trading Ltd",
+            "debtor_account": "GB8347688983276226",
+            "creditor_name": "Premium Services Ltd",
+            "creditor_account": "GB3168273137777636",
+            "end_to_end_id": "E2E202511252354425318"
+          },
+          {
+            "transaction_id": "TXN000047",
+            "message_type": "pacs.008",
+            "amount": "3497575.77",
+            "currency": "USD",
+            "value_date": "2025-11-25",
+            "debtor_name": "Global Trading Ltd",
+            "debtor_account": "GB8347688983276226",
+            "creditor_name": "Premium Services Ltd",
+            "creditor_account": "GB3168273137777636",
+            "end_to_end_id": "E2E202511252354425318"
+          },
+          {
+            "transaction_id": "TXN000047",
+            "message_type": "pacs.008",
+            "amount": "3497575.77",
+            "currency": "USD",
+            "value_date": "2025-11-25",
+            "debtor_name": "Global Trading Ltd",
+            "debtor_account": "GB8347688983276226",
+            "creditor_name": "Premium Services Ltd",
+            "creditor_account": "GB3168273137777636",
+            "end_to_end_id": "E2E202511252354425318"
+          }
+        ],
+        "duplicate_count": 3
+      },
+      "timestamp": "2025-11-26T00:23:05.770767"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0048",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000052",
+      "description": "Transaction TXN000052 appears 4 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 4,
+        "primary_transaction": {
+          "message_type": "pacs.008",
+          "transaction_id": "TXN000052",
+          "amount": 1180215.84,
+          "currency": "EUR",
+          "value_date": "2025-11-25",
+          "debtor_name": "Trading Partners LLC",
+          "debtor_account": "GB6205160636409193",
+          "debtor_bic": "HSBCGB2LXXX",
+          "creditor_name": "Finance Solutions GmbH",
+          "creditor_account": "GB5173480527514570",
+          "creditor_bic": "BARCGB22XXX",
+          "remittance_info": "Invoice payment 9747",
+          "instruction_id": "INST202511252354425391",
+          "end_to_end_id": "E2E202511252354427392"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000052",
+            "message_type": "pacs.008",
+            "amount": "1180215.84",
+            "currency": "EUR",
+            "value_date": "2025-11-25",
+            "debtor_name": "Trading Partners LLC",
+            "debtor_account": "GB6205160636409193",
+            "creditor_name": "Finance Solutions GmbH",
+            "creditor_account": "GB5173480527514570",
+            "end_to_end_id": "E2E202511252354427392"
+          },
+          {
+            "transaction_id": "TXN000052",
+            "message_type": "pacs.008",
+            "amount": "1180215.84",
+            "currency": "EUR",
+            "value_date": "2025-11-25",
+            "debtor_name": "Trading Partners LLC",
+            "debtor_account": "GB6205160636409193",
+            "creditor_name": "Finance Solutions GmbH",
+            "creditor_account": "GB5173480527514570",
+            "end_to_end_id": "E2E202511252354427392"
+          },
+          {
+            "transaction_id": "TXN000052",
+            "message_type": "pacs.008",
+            "amount": "1180215.84",
+            "currency": "EUR",
+            "value_date": "2025-11-25",
+            "debtor_name": "Trading Partners LLC",
+            "debtor_account": "GB6205160636409193",
+            "creditor_name": "Finance Solutions GmbH",
+            "creditor_account": "GB5173480527514570",
+            "end_to_end_id": "E2E202511252354427392"
+          },
+          {
+            "transaction_id": "TXN000052",
+            "message_type": "pacs.008",
+            "amount": "1180215.84",
+            "currency": "EUR",
+            "value_date": "2025-11-25",
+            "debtor_name": "Trading Partners LLC",
+            "debtor_account": "GB6205160636409193",
+            "creditor_name": "Finance Solutions GmbH",
+            "creditor_account": "GB5173480527514570",
+            "end_to_end_id": "E2E202511252354427392"
+          }
+        ],
+        "duplicate_count": 3
+      },
+      "timestamp": "2025-11-26T00:23:05.770784"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0049",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000070",
+      "description": "Transaction TXN000070 appears 3 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 3,
+        "primary_transaction": {
+          "message_type": "pacs.008",
+          "transaction_id": "TXN000070",
+          "amount": 4139144.92,
+          "currency": "CHF",
+          "value_date": "2025-11-25",
+          "debtor_name": "Trading Partners LLC",
+          "debtor_account": "GB4851375086709550",
+          "debtor_bic": "CITIUS33XXX",
+          "creditor_name": "TechVentures Inc",
+          "creditor_account": "GB1119948351245812",
+          "creditor_bic": "HSBCGB2LXXX",
+          "remittance_info": "Invoice payment 2703",
+          "instruction_id": "INST202511252354424726",
+          "end_to_end_id": "E2E202511252354423168"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000070",
+            "message_type": "pacs.008",
+            "amount": "4139144.92",
+            "currency": "CHF",
+            "value_date": "2025-11-25",
+            "debtor_name": "Trading Partners LLC",
+            "debtor_account": "GB4851375086709550",
+            "creditor_name": "TechVentures Inc",
+            "creditor_account": "GB1119948351245812",
+            "end_to_end_id": "E2E202511252354423168"
+          },
+          {
+            "transaction_id": "TXN000070",
+            "message_type": "pacs.008",
+            "amount": "4139144.92",
+            "currency": "CHF",
+            "value_date": "2025-11-25",
+            "debtor_name": "Trading Partners LLC",
+            "debtor_account": "GB4851375086709550",
+            "creditor_name": "TechVentures Inc",
+            "creditor_account": "GB1119948351245812",
+            "end_to_end_id": "E2E202511252354423168"
+          },
+          {
+            "transaction_id": "TXN000070",
+            "message_type": "pacs.008",
+            "amount": "4139144.92",
+            "currency": "CHF",
+            "value_date": "2025-11-25",
+            "debtor_name": "Trading Partners LLC",
+            "debtor_account": "GB4851375086709550",
+            "creditor_name": "TechVentures Inc",
+            "creditor_account": "GB1119948351245812",
+            "end_to_end_id": "E2E202511252354423168"
+          }
+        ],
+        "duplicate_count": 2
+      },
+      "timestamp": "2025-11-26T00:23:05.770800"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0050",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000076",
+      "description": "Transaction TXN000076 appears 2 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 2,
+        "primary_transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000076",
+          "amount": 4269896.05,
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "instructing_agent": "BARCGB22XXX",
+          "instructed_agent": "CITIUS33XXX",
+          "creditor_institution": "CHASUS33XXX",
+          "debtor_institution": "HSBCGB2LXXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354422894",
+          "end_to_end_id": "E2E202511252354428077",
+          "purpose": "INTC"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000076",
+            "message_type": "pacs.009",
+            "amount": "4269896.05",
+            "currency": "GBP",
+            "value_date": "2025-11-25",
+            "instructing_agent": "BARCGB22XXX",
+            "instructed_agent": "CITIUS33XXX",
+            "end_to_end_id": "E2E202511252354428077"
+          },
+          {
+            "transaction_id": "TXN000076",
+            "message_type": "pacs.009",
+            "amount": "4269896.05",
+            "currency": "GBP",
+            "value_date": "2025-11-25",
+            "instructing_agent": "BARCGB22XXX",
+            "instructed_agent": "CITIUS33XXX",
+            "end_to_end_id": "E2E202511252354428077"
+          }
+        ],
+        "duplicate_count": 1
+      },
+      "timestamp": "2025-11-26T00:23:05.770816"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0051",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000084",
+      "description": "Transaction TXN000084 appears 2 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 2,
+        "primary_transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000084",
+          "amount": 82646.51,
+          "currency": "EUR",
+          "value_date": "2025-11-25",
+          "instructing_agent": "CRESCHZZXXX",
+          "instructed_agent": "CRESCHZZXXX",
+          "creditor_institution": "BNPAFRPPXXX",
+          "debtor_institution": "CRESCHZZXXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354422083",
+          "end_to_end_id": "E2E202511252354426858",
+          "purpose": "INTC"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000084",
+            "message_type": "pacs.009",
+            "amount": "82646.51",
+            "currency": "EUR",
+            "value_date": "2025-11-25",
+            "instructing_agent": "CRESCHZZXXX",
+            "instructed_agent": "CRESCHZZXXX",
+            "end_to_end_id": "E2E202511252354426858"
+          },
+          {
+            "transaction_id": "TXN000084",
+            "message_type": "pacs.009",
+            "amount": "82646.51",
+            "currency": "EUR",
+            "value_date": "2025-11-25",
+            "instructing_agent": "CRESCHZZXXX",
+            "instructed_agent": "CRESCHZZXXX",
+            "end_to_end_id": "E2E202511252354426858"
+          }
+        ],
+        "duplicate_count": 1
+      },
+      "timestamp": "2025-11-26T00:23:05.770831"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0052",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000093",
+      "description": "Transaction TXN000093 appears 2 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 2,
+        "primary_transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000093",
+          "amount": 675632.48,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "instructing_agent": "DEUTDEFFXXX",
+          "instructed_agent": "HSBCGB2LXXX",
+          "creditor_institution": "BARCGB22XXX",
+          "debtor_institution": "CITIUS33XXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354427599",
+          "end_to_end_id": "E2E202511252354423984",
+          "purpose": "INTC"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000093",
+            "message_type": "pacs.009",
+            "amount": "675632.48",
+            "currency": "JPY",
+            "value_date": "2025-11-25",
+            "instructing_agent": "DEUTDEFFXXX",
+            "instructed_agent": "HSBCGB2LXXX",
+            "end_to_end_id": "E2E202511252354423984"
+          },
+          {
+            "transaction_id": "TXN000093",
+            "message_type": "pacs.009",
+            "amount": "675632.48",
+            "currency": "JPY",
+            "value_date": "2025-11-25",
+            "instructing_agent": "DEUTDEFFXXX",
+            "instructed_agent": "HSBCGB2LXXX",
+            "end_to_end_id": "E2E202511252354423984"
+          }
+        ],
+        "duplicate_count": 1
+      },
+      "timestamp": "2025-11-26T00:23:05.770845"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0053",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000098",
+      "description": "Transaction TXN000098 appears 4 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 4,
+        "primary_transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000098",
+          "amount": 3302427.82,
+          "currency": "CHF",
+          "value_date": "2025-11-25",
+          "instructing_agent": "BNPAFRPPXXX",
+          "instructed_agent": "HSBCGB2LXXX",
+          "creditor_institution": "BNPAFRPPXXX",
+          "debtor_institution": "BNPAFRPPXXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354425094",
+          "end_to_end_id": "E2E202511252354429036",
+          "purpose": "INTC"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000098",
+            "message_type": "pacs.009",
+            "amount": "3302427.82",
+            "currency": "CHF",
+            "value_date": "2025-11-25",
+            "instructing_agent": "BNPAFRPPXXX",
+            "instructed_agent": "HSBCGB2LXXX",
+            "end_to_end_id": "E2E202511252354429036"
+          },
+          {
+            "transaction_id": "TXN000098",
+            "message_type": "pacs.009",
+            "amount": "3302427.82",
+            "currency": "CHF",
+            "value_date": "2025-11-25",
+            "instructing_agent": "BNPAFRPPXXX",
+            "instructed_agent": "HSBCGB2LXXX",
+            "end_to_end_id": "E2E202511252354429036"
+          },
+          {
+            "transaction_id": "TXN000098",
+            "message_type": "pacs.009",
+            "amount": "3302427.82",
+            "currency": "CHF",
+            "value_date": "2025-11-25",
+            "instructing_agent": "BNPAFRPPXXX",
+            "instructed_agent": "HSBCGB2LXXX",
+            "end_to_end_id": "E2E202511252354429036"
+          },
+          {
+            "transaction_id": "TXN000098",
+            "message_type": "pacs.009",
+            "amount": "3302427.82",
+            "currency": "CHF",
+            "value_date": "2025-11-25",
+            "instructing_agent": "BNPAFRPPXXX",
+            "instructed_agent": "HSBCGB2LXXX",
+            "end_to_end_id": "E2E202511252354429036"
+          }
+        ],
+        "duplicate_count": 3
+      },
+      "timestamp": "2025-11-26T00:23:05.770860"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0054",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000102",
+      "description": "Transaction TXN000102 appears 2 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 2,
+        "primary_transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000102",
+          "amount": 4759603.4,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "instructing_agent": "DEUTDEFFXXX",
+          "instructed_agent": "HSBCGB2LXXX",
+          "creditor_institution": "BNPAFRPPXXX",
+          "debtor_institution": "BARCGB22XXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354428006",
+          "end_to_end_id": "E2E202511252354425767",
+          "purpose": "INTC"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000102",
+            "message_type": "pacs.009",
+            "amount": "4759603.4",
+            "currency": "JPY",
+            "value_date": "2025-11-25",
+            "instructing_agent": "DEUTDEFFXXX",
+            "instructed_agent": "HSBCGB2LXXX",
+            "end_to_end_id": "E2E202511252354425767"
+          },
+          {
+            "transaction_id": "TXN000102",
+            "message_type": "pacs.009",
+            "amount": "4759603.4",
+            "currency": "JPY",
+            "value_date": "2025-11-25",
+            "instructing_agent": "DEUTDEFFXXX",
+            "instructed_agent": "HSBCGB2LXXX",
+            "end_to_end_id": "E2E202511252354425767"
+          }
+        ],
+        "duplicate_count": 1
+      },
+      "timestamp": "2025-11-26T00:23:05.770875"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0055",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000106",
+      "description": "Transaction TXN000106 appears 4 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 4,
+        "primary_transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000106",
+          "amount": 1358577.92,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "instructing_agent": "BARCGB22XXX",
+          "instructed_agent": "CHASUS33XXX",
+          "creditor_institution": "CITIUS33XXX",
+          "debtor_institution": "BARCGB22XXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354421403",
+          "end_to_end_id": "E2E202511252354427649",
+          "purpose": "INTC"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000106",
+            "message_type": "pacs.009",
+            "amount": "1358577.92",
+            "currency": "JPY",
+            "value_date": "2025-11-25",
+            "instructing_agent": "BARCGB22XXX",
+            "instructed_agent": "CHASUS33XXX",
+            "end_to_end_id": "E2E202511252354427649"
+          },
+          {
+            "transaction_id": "TXN000106",
+            "message_type": "pacs.009",
+            "amount": "1358577.92",
+            "currency": "JPY",
+            "value_date": "2025-11-25",
+            "instructing_agent": "BARCGB22XXX",
+            "instructed_agent": "CHASUS33XXX",
+            "end_to_end_id": "E2E202511252354427649"
+          },
+          {
+            "transaction_id": "TXN000106",
+            "message_type": "pacs.009",
+            "amount": "1358577.92",
+            "currency": "JPY",
+            "value_date": "2025-11-25",
+            "instructing_agent": "BARCGB22XXX",
+            "instructed_agent": "CHASUS33XXX",
+            "end_to_end_id": "E2E202511252354427649"
+          },
+          {
+            "transaction_id": "TXN000106",
+            "message_type": "pacs.009",
+            "amount": "1358577.92",
+            "currency": "JPY",
+            "value_date": "2025-11-25",
+            "instructing_agent": "BARCGB22XXX",
+            "instructed_agent": "CHASUS33XXX",
+            "end_to_end_id": "E2E202511252354427649"
+          }
+        ],
+        "duplicate_count": 3
+      },
+      "timestamp": "2025-11-26T00:23:05.770890"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0056",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000121",
+      "description": "Transaction TXN000121 appears 4 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 4,
+        "primary_transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000121",
+          "amount": 1779434.0,
+          "currency": "EUR",
+          "value_date": "2025-11-25",
+          "instructing_agent": "BARCGB22XXX",
+          "instructed_agent": "HSBCGB2LXXX",
+          "creditor_institution": "CRESCHZZXXX",
+          "debtor_institution": "CHASUS33XXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354427257",
+          "end_to_end_id": "E2E202511252354421693",
+          "purpose": "INTC"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000121",
+            "message_type": "pacs.009",
+            "amount": "1779434.0",
+            "currency": "EUR",
+            "value_date": "2025-11-25",
+            "instructing_agent": "BARCGB22XXX",
+            "instructed_agent": "HSBCGB2LXXX",
+            "end_to_end_id": "E2E202511252354421693"
+          },
+          {
+            "transaction_id": "TXN000121",
+            "message_type": "pacs.009",
+            "amount": "1779434.0",
+            "currency": "EUR",
+            "value_date": "2025-11-25",
+            "instructing_agent": "BARCGB22XXX",
+            "instructed_agent": "HSBCGB2LXXX",
+            "end_to_end_id": "E2E202511252354421693"
+          },
+          {
+            "transaction_id": "TXN000121",
+            "message_type": "pacs.009",
+            "amount": "1779434.0",
+            "currency": "EUR",
+            "value_date": "2025-11-25",
+            "instructing_agent": "BARCGB22XXX",
+            "instructed_agent": "HSBCGB2LXXX",
+            "end_to_end_id": "E2E202511252354421693"
+          },
+          {
+            "transaction_id": "TXN000121",
+            "message_type": "pacs.009",
+            "amount": "1779434.0",
+            "currency": "EUR",
+            "value_date": "2025-11-25",
+            "instructing_agent": "BARCGB22XXX",
+            "instructed_agent": "HSBCGB2LXXX",
+            "end_to_end_id": "E2E202511252354421693"
+          }
+        ],
+        "duplicate_count": 3
+      },
+      "timestamp": "2025-11-26T00:23:05.770905"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0057",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000123",
+      "description": "Transaction TXN000123 appears 2 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 2,
+        "primary_transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000123",
+          "amount": 4292944.69,
+          "currency": "CHF",
+          "value_date": "2025-11-25",
+          "instructing_agent": "CRESCHZZXXX",
+          "instructed_agent": "CITIUS33XXX",
+          "creditor_institution": "UBSWCHZHXXX",
+          "debtor_institution": "DEUTDEFFXXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354426832",
+          "end_to_end_id": "E2E202511252354428738",
+          "purpose": "INTC"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000123",
+            "message_type": "pacs.009",
+            "amount": "4292944.69",
+            "currency": "CHF",
+            "value_date": "2025-11-25",
+            "instructing_agent": "CRESCHZZXXX",
+            "instructed_agent": "CITIUS33XXX",
+            "end_to_end_id": "E2E202511252354428738"
+          },
+          {
+            "transaction_id": "TXN000123",
+            "message_type": "pacs.009",
+            "amount": "4292944.69",
+            "currency": "CHF",
+            "value_date": "2025-11-25",
+            "instructing_agent": "CRESCHZZXXX",
+            "instructed_agent": "CITIUS33XXX",
+            "end_to_end_id": "E2E202511252354428738"
+          }
+        ],
+        "duplicate_count": 1
+      },
+      "timestamp": "2025-11-26T00:23:05.770921"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0058",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000143",
+      "description": "Transaction TXN000143 appears 2 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 2,
+        "primary_transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000143",
+          "amount": 1131337.17,
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "instructing_agent": "BNPAFRPPXXX",
+          "instructed_agent": "BARCGB22XXX",
+          "creditor_institution": "BARCGB22XXX",
+          "debtor_institution": "DEUTDEFFXXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354428939",
+          "end_to_end_id": "E2E202511252354423634",
+          "purpose": "INTC"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000143",
+            "message_type": "pacs.009",
+            "amount": "1131337.17",
+            "currency": "GBP",
+            "value_date": "2025-11-25",
+            "instructing_agent": "BNPAFRPPXXX",
+            "instructed_agent": "BARCGB22XXX",
+            "end_to_end_id": "E2E202511252354423634"
+          },
+          {
+            "transaction_id": "TXN000143",
+            "message_type": "pacs.009",
+            "amount": "1131337.17",
+            "currency": "GBP",
+            "value_date": "2025-11-25",
+            "instructing_agent": "BNPAFRPPXXX",
+            "instructed_agent": "BARCGB22XXX",
+            "end_to_end_id": "E2E202511252354423634"
+          }
+        ],
+        "duplicate_count": 1
+      },
+      "timestamp": "2025-11-26T00:23:05.770936"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0059",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000152",
+      "description": "Transaction TXN000152 appears 3 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 3,
+        "primary_transaction": {
+          "message_type": "MT103",
+          "transaction_id": "TXN000152",
+          "transaction_reference": "MT103202511252354429179",
+          "amount": 2738462.1,
+          "currency": "CHF",
+          "value_date": "2025-11-25",
+          "ordering_customer": "Continental Industries",
+          "ordering_institution": "CRESCHZZXXX",
+          "beneficiary_customer": "International Exports SA",
+          "beneficiary_institution": "CRESCHZZXXX",
+          "intermediary_institution": null,
+          "sender_to_receiver_info": "Payment for services 3211",
+          "remittance_info": "Invoice 70745"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000152",
+            "message_type": "MT103",
+            "amount": "2738462.1",
+            "currency": "CHF",
+            "value_date": "2025-11-25",
+            "ordering_customer": "Continental Industries",
+            "beneficiary_customer": "International Exports SA",
+            "transaction_reference": "MT103202511252354429179"
+          },
+          {
+            "transaction_id": "TXN000152",
+            "message_type": "MT103",
+            "amount": "2738462.1",
+            "currency": "CHF",
+            "value_date": "2025-11-25",
+            "ordering_customer": "Continental Industries",
+            "beneficiary_customer": "International Exports SA",
+            "transaction_reference": "MT103202511252354429179"
+          },
+          {
+            "transaction_id": "TXN000152",
+            "message_type": "MT103",
+            "amount": "2738462.1",
+            "currency": "CHF",
+            "value_date": "2025-11-25",
+            "ordering_customer": "Continental Industries",
+            "beneficiary_customer": "International Exports SA",
+            "transaction_reference": "MT103202511252354429179"
+          }
+        ],
+        "duplicate_count": 2
+      },
+      "timestamp": "2025-11-26T00:23:05.770956"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0060",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000173",
+      "description": "Transaction TXN000173 appears 3 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 3,
+        "primary_transaction": {
+          "message_type": "MT103",
+          "transaction_id": "TXN000173",
+          "transaction_reference": "MT103202511252354429054",
+          "amount": 1118545.69,
+          "currency": "EUR",
+          "value_date": "2025-11-25",
+          "ordering_customer": "Finance Solutions GmbH",
+          "ordering_institution": "CHASUS33XXX",
+          "beneficiary_customer": "Global Trading Ltd",
+          "beneficiary_institution": "HSBCGB2LXXX",
+          "intermediary_institution": null,
+          "sender_to_receiver_info": "Payment for services 9625",
+          "remittance_info": "Invoice 24712"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000173",
+            "message_type": "MT103",
+            "amount": "1118545.69",
+            "currency": "EUR",
+            "value_date": "2025-11-25",
+            "ordering_customer": "Finance Solutions GmbH",
+            "beneficiary_customer": "Global Trading Ltd",
+            "transaction_reference": "MT103202511252354429054"
+          },
+          {
+            "transaction_id": "TXN000173",
+            "message_type": "MT103",
+            "amount": "1118545.69",
+            "currency": "EUR",
+            "value_date": "2025-11-25",
+            "ordering_customer": "Finance Solutions GmbH",
+            "beneficiary_customer": "Global Trading Ltd",
+            "transaction_reference": "MT103202511252354429054"
+          },
+          {
+            "transaction_id": "TXN000173",
+            "message_type": "MT103",
+            "amount": "1118545.69",
+            "currency": "EUR",
+            "value_date": "2025-11-25",
+            "ordering_customer": "Finance Solutions GmbH",
+            "beneficiary_customer": "Global Trading Ltd",
+            "transaction_reference": "MT103202511252354429054"
+          }
+        ],
+        "duplicate_count": 2
+      },
+      "timestamp": "2025-11-26T00:23:05.770971"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0061",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000186",
+      "description": "Transaction TXN000186 appears 2 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 2,
+        "primary_transaction": {
+          "message_type": "MT103",
+          "transaction_id": "TXN000186",
+          "transaction_reference": "MT103202511252354423000",
+          "amount": 4284521.52,
+          "currency": "CHF",
+          "value_date": "2025-11-25",
+          "ordering_customer": "Worldwide Logistics",
+          "ordering_institution": "BNPAFRPPXXX",
+          "beneficiary_customer": "Continental Industries",
+          "beneficiary_institution": "BNPAFRPPXXX",
+          "intermediary_institution": null,
+          "sender_to_receiver_info": "Payment for services 5788",
+          "remittance_info": "Invoice 50153"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000186",
+            "message_type": "MT103",
+            "amount": "4284521.52",
+            "currency": "CHF",
+            "value_date": "2025-11-25",
+            "ordering_customer": "Worldwide Logistics",
+            "beneficiary_customer": "Continental Industries",
+            "transaction_reference": "MT103202511252354423000"
+          },
+          {
+            "transaction_id": "TXN000186",
+            "message_type": "MT103",
+            "amount": "4284521.52",
+            "currency": "CHF",
+            "value_date": "2025-11-25",
+            "ordering_customer": "Worldwide Logistics",
+            "beneficiary_customer": "Continental Industries",
+            "transaction_reference": "MT103202511252354423000"
+          }
+        ],
+        "duplicate_count": 1
+      },
+      "timestamp": "2025-11-26T00:23:05.770986"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0062",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000192",
+      "description": "Transaction TXN000192 appears 4 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 4,
+        "primary_transaction": {
+          "message_type": "MT103",
+          "transaction_id": "TXN000192",
+          "transaction_reference": "MT103202511252354427449",
+          "amount": 339741.81,
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "ordering_customer": "Global Trading Ltd",
+          "ordering_institution": "UBSWCHZHXXX",
+          "beneficiary_customer": "Acme Corporation",
+          "beneficiary_institution": "UBSWCHZHXXX",
+          "intermediary_institution": "CRESCHZZXXX",
+          "sender_to_receiver_info": "Payment for services 1228",
+          "remittance_info": "Invoice 17916"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000192",
+            "message_type": "MT103",
+            "amount": "339741.81",
+            "currency": "GBP",
+            "value_date": "2025-11-25",
+            "ordering_customer": "Global Trading Ltd",
+            "beneficiary_customer": "Acme Corporation",
+            "transaction_reference": "MT103202511252354427449"
+          },
+          {
+            "transaction_id": "TXN000192",
+            "message_type": "MT103",
+            "amount": "339741.81",
+            "currency": "GBP",
+            "value_date": "2025-11-25",
+            "ordering_customer": "Global Trading Ltd",
+            "beneficiary_customer": "Acme Corporation",
+            "transaction_reference": "MT103202511252354427449"
+          },
+          {
+            "transaction_id": "TXN000192",
+            "message_type": "MT103",
+            "amount": "339741.81",
+            "currency": "GBP",
+            "value_date": "2025-11-25",
+            "ordering_customer": "Global Trading Ltd",
+            "beneficiary_customer": "Acme Corporation",
+            "transaction_reference": "MT103202511252354427449"
+          },
+          {
+            "transaction_id": "TXN000192",
+            "message_type": "MT103",
+            "amount": "339741.81",
+            "currency": "GBP",
+            "value_date": "2025-11-25",
+            "ordering_customer": "Global Trading Ltd",
+            "beneficiary_customer": "Acme Corporation",
+            "transaction_reference": "MT103202511252354427449"
+          }
+        ],
+        "duplicate_count": 3
+      },
+      "timestamp": "2025-11-26T00:23:05.771000"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0063",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000229",
+      "description": "Transaction TXN000229 appears 4 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 4,
+        "primary_transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000229",
+          "transaction_reference": "MT202202511252354423895",
+          "amount": 1743368.13,
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "ordering_institution": "BARCGB22XXX",
+          "beneficiary_institution": "BARCGB22XXX",
+          "sender_correspondent": "DEUTDEFFXXX",
+          "receiver_correspondent": "BNPAFRPPXXX",
+          "intermediary": "CITIUS33XXX",
+          "related_reference": "REL202511252354426373"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000229",
+            "message_type": "MT202",
+            "amount": "1743368.13",
+            "currency": "GBP",
+            "value_date": "2025-11-25",
+            "ordering_institution": "BARCGB22XXX",
+            "beneficiary_institution": "BARCGB22XXX",
+            "transaction_reference": "MT202202511252354423895"
+          },
+          {
+            "transaction_id": "TXN000229",
+            "message_type": "MT202",
+            "amount": "1743368.13",
+            "currency": "GBP",
+            "value_date": "2025-11-25",
+            "ordering_institution": "BARCGB22XXX",
+            "beneficiary_institution": "BARCGB22XXX",
+            "transaction_reference": "MT202202511252354423895"
+          },
+          {
+            "transaction_id": "TXN000229",
+            "message_type": "MT202",
+            "amount": "1743368.13",
+            "currency": "GBP",
+            "value_date": "2025-11-25",
+            "ordering_institution": "BARCGB22XXX",
+            "beneficiary_institution": "BARCGB22XXX",
+            "transaction_reference": "MT202202511252354423895"
+          },
+          {
+            "transaction_id": "TXN000229",
+            "message_type": "MT202",
+            "amount": "1743368.13",
+            "currency": "GBP",
+            "value_date": "2025-11-25",
+            "ordering_institution": "BARCGB22XXX",
+            "beneficiary_institution": "BARCGB22XXX",
+            "transaction_reference": "MT202202511252354423895"
+          }
+        ],
+        "duplicate_count": 3
+      },
+      "timestamp": "2025-11-26T00:23:05.771015"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0064",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000236",
+      "description": "Transaction TXN000236 appears 4 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 4,
+        "primary_transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000236",
+          "transaction_reference": "MT202202511252354429650",
+          "amount": 1779243.19,
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "ordering_institution": "CHASUS33XXX",
+          "beneficiary_institution": "UBSWCHZHXXX",
+          "sender_correspondent": "CITIUS33XXX",
+          "receiver_correspondent": "BNPAFRPPXXX",
+          "intermediary": null,
+          "related_reference": "REL202511252354427744"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000236",
+            "message_type": "MT202",
+            "amount": "1779243.19",
+            "currency": "GBP",
+            "value_date": "2025-11-25",
+            "ordering_institution": "CHASUS33XXX",
+            "beneficiary_institution": "UBSWCHZHXXX",
+            "transaction_reference": "MT202202511252354429650"
+          },
+          {
+            "transaction_id": "TXN000236",
+            "message_type": "MT202",
+            "amount": "1779243.19",
+            "currency": "GBP",
+            "value_date": "2025-11-25",
+            "ordering_institution": "CHASUS33XXX",
+            "beneficiary_institution": "UBSWCHZHXXX",
+            "transaction_reference": "MT202202511252354429650"
+          },
+          {
+            "transaction_id": "TXN000236",
+            "message_type": "MT202",
+            "amount": "1779243.19",
+            "currency": "GBP",
+            "value_date": "2025-11-25",
+            "ordering_institution": "CHASUS33XXX",
+            "beneficiary_institution": "UBSWCHZHXXX",
+            "transaction_reference": "MT202202511252354429650"
+          },
+          {
+            "transaction_id": "TXN000236",
+            "message_type": "MT202",
+            "amount": "1779243.19",
+            "currency": "GBP",
+            "value_date": "2025-11-25",
+            "ordering_institution": "CHASUS33XXX",
+            "beneficiary_institution": "UBSWCHZHXXX",
+            "transaction_reference": "MT202202511252354429650"
+          }
+        ],
+        "duplicate_count": 3
+      },
+      "timestamp": "2025-11-26T00:23:05.771030"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0065",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000240",
+      "description": "Transaction TXN000240 appears 2 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 2,
+        "primary_transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000240",
+          "transaction_reference": "MT202202511252354424320",
+          "amount": 3101817.22,
+          "currency": "USD",
+          "value_date": "2025-11-25",
+          "ordering_institution": "CHASUS33XXX",
+          "beneficiary_institution": "CITIUS33XXX",
+          "sender_correspondent": "BNPAFRPPXXX",
+          "receiver_correspondent": "BNPAFRPPXXX",
+          "intermediary": "HSBCGB2LXXX",
+          "related_reference": "REL202511252354428124"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000240",
+            "message_type": "MT202",
+            "amount": "3101817.22",
+            "currency": "USD",
+            "value_date": "2025-11-25",
+            "ordering_institution": "CHASUS33XXX",
+            "beneficiary_institution": "CITIUS33XXX",
+            "transaction_reference": "MT202202511252354424320"
+          },
+          {
+            "transaction_id": "TXN000240",
+            "message_type": "MT202",
+            "amount": "3101817.22",
+            "currency": "USD",
+            "value_date": "2025-11-25",
+            "ordering_institution": "CHASUS33XXX",
+            "beneficiary_institution": "CITIUS33XXX",
+            "transaction_reference": "MT202202511252354424320"
+          }
+        ],
+        "duplicate_count": 1
+      },
+      "timestamp": "2025-11-26T00:23:05.771044"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0066",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000248",
+      "description": "Transaction TXN000248 appears 3 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 3,
+        "primary_transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000248",
+          "transaction_reference": "MT202202511252354422981",
+          "amount": 511599.35,
+          "currency": "EUR",
+          "value_date": "2025-11-25",
+          "ordering_institution": "CITIUS33XXX",
+          "beneficiary_institution": "BNPAFRPPXXX",
+          "sender_correspondent": "BNPAFRPPXXX",
+          "receiver_correspondent": "HSBCGB2LXXX",
+          "intermediary": null,
+          "related_reference": "REL202511252354429333"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000248",
+            "message_type": "MT202",
+            "amount": "511599.35",
+            "currency": "EUR",
+            "value_date": "2025-11-25",
+            "ordering_institution": "CITIUS33XXX",
+            "beneficiary_institution": "BNPAFRPPXXX",
+            "transaction_reference": "MT202202511252354422981"
+          },
+          {
+            "transaction_id": "TXN000248",
+            "message_type": "MT202",
+            "amount": "511599.35",
+            "currency": "EUR",
+            "value_date": "2025-11-25",
+            "ordering_institution": "CITIUS33XXX",
+            "beneficiary_institution": "BNPAFRPPXXX",
+            "transaction_reference": "MT202202511252354422981"
+          },
+          {
+            "transaction_id": "TXN000248",
+            "message_type": "MT202",
+            "amount": "511599.35",
+            "currency": "EUR",
+            "value_date": "2025-11-25",
+            "ordering_institution": "CITIUS33XXX",
+            "beneficiary_institution": "BNPAFRPPXXX",
+            "transaction_reference": "MT202202511252354422981"
+          }
+        ],
+        "duplicate_count": 2
+      },
+      "timestamp": "2025-11-26T00:23:05.771059"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0067",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000254",
+      "description": "Transaction TXN000254 appears 3 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 3,
+        "primary_transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000254",
+          "transaction_reference": "MT202202511252354428109",
+          "amount": 2101911.14,
+          "currency": "USD",
+          "value_date": "2025-11-25",
+          "ordering_institution": "CHASUS33XXX",
+          "beneficiary_institution": "BNPAFRPPXXX",
+          "sender_correspondent": "CITIUS33XXX",
+          "receiver_correspondent": "CRESCHZZXXX",
+          "intermediary": null,
+          "related_reference": "REL202511252354425667"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000254",
+            "message_type": "MT202",
+            "amount": "2101911.14",
+            "currency": "USD",
+            "value_date": "2025-11-25",
+            "ordering_institution": "CHASUS33XXX",
+            "beneficiary_institution": "BNPAFRPPXXX",
+            "transaction_reference": "MT202202511252354428109"
+          },
+          {
+            "transaction_id": "TXN000254",
+            "message_type": "MT202",
+            "amount": "2101911.14",
+            "currency": "USD",
+            "value_date": "2025-11-25",
+            "ordering_institution": "CHASUS33XXX",
+            "beneficiary_institution": "BNPAFRPPXXX",
+            "transaction_reference": "MT202202511252354428109"
+          },
+          {
+            "transaction_id": "TXN000254",
+            "message_type": "MT202",
+            "amount": "2101911.14",
+            "currency": "USD",
+            "value_date": "2025-11-25",
+            "ordering_institution": "CHASUS33XXX",
+            "beneficiary_institution": "BNPAFRPPXXX",
+            "transaction_reference": "MT202202511252354428109"
+          }
+        ],
+        "duplicate_count": 2
+      },
+      "timestamp": "2025-11-26T00:23:05.771073"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0068",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000267",
+      "description": "Transaction TXN000267 appears 2 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 2,
+        "primary_transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000267",
+          "transaction_reference": "MT202202511252354421295",
+          "amount": 4683742.16,
+          "currency": "USD",
+          "value_date": "2025-11-25",
+          "ordering_institution": "CHASUS33XXX",
+          "beneficiary_institution": "UBSWCHZHXXX",
+          "sender_correspondent": "CRESCHZZXXX",
+          "receiver_correspondent": "DEUTDEFFXXX",
+          "intermediary": null,
+          "related_reference": "REL202511252354426610"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000267",
+            "message_type": "MT202",
+            "amount": "4683742.16",
+            "currency": "USD",
+            "value_date": "2025-11-25",
+            "ordering_institution": "CHASUS33XXX",
+            "beneficiary_institution": "UBSWCHZHXXX",
+            "transaction_reference": "MT202202511252354421295"
+          },
+          {
+            "transaction_id": "TXN000267",
+            "message_type": "MT202",
+            "amount": "4683742.16",
+            "currency": "USD",
+            "value_date": "2025-11-25",
+            "ordering_institution": "CHASUS33XXX",
+            "beneficiary_institution": "UBSWCHZHXXX",
+            "transaction_reference": "MT202202511252354421295"
+          }
+        ],
+        "duplicate_count": 1
+      },
+      "timestamp": "2025-11-26T00:23:05.771087"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0069",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000271",
+      "description": "Transaction TXN000271 appears 3 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 3,
+        "primary_transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000271",
+          "transaction_reference": "MT202202511252354425052",
+          "amount": 1803949.7,
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "ordering_institution": "CRESCHZZXXX",
+          "beneficiary_institution": "UBSWCHZHXXX",
+          "sender_correspondent": "DEUTDEFFXXX",
+          "receiver_correspondent": "UBSWCHZHXXX",
+          "intermediary": null,
+          "related_reference": "REL202511252354421515"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000271",
+            "message_type": "MT202",
+            "amount": "1803949.7",
+            "currency": "GBP",
+            "value_date": "2025-11-25",
+            "ordering_institution": "CRESCHZZXXX",
+            "beneficiary_institution": "UBSWCHZHXXX",
+            "transaction_reference": "MT202202511252354425052"
+          },
+          {
+            "transaction_id": "TXN000271",
+            "message_type": "MT202",
+            "amount": "1803949.7",
+            "currency": "GBP",
+            "value_date": "2025-11-25",
+            "ordering_institution": "CRESCHZZXXX",
+            "beneficiary_institution": "UBSWCHZHXXX",
+            "transaction_reference": "MT202202511252354425052"
+          },
+          {
+            "transaction_id": "TXN000271",
+            "message_type": "MT202",
+            "amount": "1803949.7",
+            "currency": "GBP",
+            "value_date": "2025-11-25",
+            "ordering_institution": "CRESCHZZXXX",
+            "beneficiary_institution": "UBSWCHZHXXX",
+            "transaction_reference": "MT202202511252354425052"
+          }
+        ],
+        "duplicate_count": 2
+      },
+      "timestamp": "2025-11-26T00:23:05.771101"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0070",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000281",
+      "description": "Transaction TXN000281 appears 2 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 2,
+        "primary_transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000281",
+          "transaction_reference": "MT202202511252354427405",
+          "amount": 3796294.67,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "ordering_institution": "UBSWCHZHXXX",
+          "beneficiary_institution": "CRESCHZZXXX",
+          "sender_correspondent": "UBSWCHZHXXX",
+          "receiver_correspondent": "UBSWCHZHXXX",
+          "intermediary": null,
+          "related_reference": "REL202511252354428200"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000281",
+            "message_type": "MT202",
+            "amount": "3796294.67",
+            "currency": "JPY",
+            "value_date": "2025-11-25",
+            "ordering_institution": "UBSWCHZHXXX",
+            "beneficiary_institution": "CRESCHZZXXX",
+            "transaction_reference": "MT202202511252354427405"
+          },
+          {
+            "transaction_id": "TXN000281",
+            "message_type": "MT202",
+            "amount": "3796294.67",
+            "currency": "JPY",
+            "value_date": "2025-11-25",
+            "ordering_institution": "UBSWCHZHXXX",
+            "beneficiary_institution": "CRESCHZZXXX",
+            "transaction_reference": "MT202202511252354427405"
+          }
+        ],
+        "duplicate_count": 1
+      },
+      "timestamp": "2025-11-26T00:23:05.771115"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0071",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000288",
+      "description": "Transaction TXN000288 appears 2 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 2,
+        "primary_transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000288",
+          "transaction_reference": "MT202202511252354429347",
+          "amount": 2389864.44,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "ordering_institution": "CITIUS33XXX",
+          "beneficiary_institution": "DEUTDEFFXXX",
+          "sender_correspondent": "CHASUS33XXX",
+          "receiver_correspondent": "HSBCGB2LXXX",
+          "intermediary": null,
+          "related_reference": "REL202511252354429143"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000288",
+            "message_type": "MT202",
+            "amount": "2389864.44",
+            "currency": "JPY",
+            "value_date": "2025-11-25",
+            "ordering_institution": "CITIUS33XXX",
+            "beneficiary_institution": "DEUTDEFFXXX",
+            "transaction_reference": "MT202202511252354429347"
+          },
+          {
+            "transaction_id": "TXN000288",
+            "message_type": "MT202",
+            "amount": "2389864.44",
+            "currency": "JPY",
+            "value_date": "2025-11-25",
+            "ordering_institution": "CITIUS33XXX",
+            "beneficiary_institution": "DEUTDEFFXXX",
+            "transaction_reference": "MT202202511252354429347"
+          }
+        ],
+        "duplicate_count": 1
+      },
+      "timestamp": "2025-11-26T00:23:05.771130"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0072",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000289",
+      "description": "Transaction TXN000289 appears 2 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 2,
+        "primary_transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000289",
+          "transaction_reference": "MT202202511252354424457",
+          "amount": 1376913.2,
+          "currency": "EUR",
+          "value_date": "2025-11-25",
+          "ordering_institution": "HSBCGB2LXXX",
+          "beneficiary_institution": "CITIUS33XXX",
+          "sender_correspondent": "BARCGB22XXX",
+          "receiver_correspondent": "DEUTDEFFXXX",
+          "intermediary": null,
+          "related_reference": "REL202511252354421268"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000289",
+            "message_type": "MT202",
+            "amount": "1376913.2",
+            "currency": "EUR",
+            "value_date": "2025-11-25",
+            "ordering_institution": "HSBCGB2LXXX",
+            "beneficiary_institution": "CITIUS33XXX",
+            "transaction_reference": "MT202202511252354424457"
+          },
+          {
+            "transaction_id": "TXN000289",
+            "message_type": "MT202",
+            "amount": "1376913.2",
+            "currency": "EUR",
+            "value_date": "2025-11-25",
+            "ordering_institution": "HSBCGB2LXXX",
+            "beneficiary_institution": "CITIUS33XXX",
+            "transaction_reference": "MT202202511252354424457"
+          }
+        ],
+        "duplicate_count": 1
+      },
+      "timestamp": "2025-11-26T00:23:05.771145"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0073",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000294",
+      "description": "Transaction TXN000294 appears 3 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 3,
+        "primary_transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000294",
+          "transaction_reference": "MT202202511252354423516",
+          "amount": 2585285.25,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "ordering_institution": "UBSWCHZHXXX",
+          "beneficiary_institution": "CHASUS33XXX",
+          "sender_correspondent": "BNPAFRPPXXX",
+          "receiver_correspondent": "CRESCHZZXXX",
+          "intermediary": null,
+          "related_reference": "REL202511252354424980"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000294",
+            "message_type": "MT202",
+            "amount": "2585285.25",
+            "currency": "JPY",
+            "value_date": "2025-11-25",
+            "ordering_institution": "UBSWCHZHXXX",
+            "beneficiary_institution": "CHASUS33XXX",
+            "transaction_reference": "MT202202511252354423516"
+          },
+          {
+            "transaction_id": "TXN000294",
+            "message_type": "MT202",
+            "amount": "2585285.25",
+            "currency": "JPY",
+            "value_date": "2025-11-25",
+            "ordering_institution": "UBSWCHZHXXX",
+            "beneficiary_institution": "CHASUS33XXX",
+            "transaction_reference": "MT202202511252354423516"
+          },
+          {
+            "transaction_id": "TXN000294",
+            "message_type": "MT202",
+            "amount": "2585285.25",
+            "currency": "JPY",
+            "value_date": "2025-11-25",
+            "ordering_institution": "UBSWCHZHXXX",
+            "beneficiary_institution": "CHASUS33XXX",
+            "transaction_reference": "MT202202511252354423516"
+          }
+        ],
+        "duplicate_count": 2
+      },
+      "timestamp": "2025-11-26T00:23:05.771159"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0074",
+      "discrepancy_type": "duplicate_record",
+      "severity": "HIGH",
+      "transaction_id": "TXN000298",
+      "description": "Transaction TXN000298 appears 4 times in Compliance System",
+      "source_system": "Compliance System",
+      "target_system": "Compliance System",
+      "details": {
+        "occurrence_count": 4,
+        "primary_transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000298",
+          "transaction_reference": "MT202202511252354421564",
+          "amount": 3236111.38,
+          "currency": "USD",
+          "value_date": "2025-11-25",
+          "ordering_institution": "HSBCGB2LXXX",
+          "beneficiary_institution": "BNPAFRPPXXX",
+          "sender_correspondent": "DEUTDEFFXXX",
+          "receiver_correspondent": "CHASUS33XXX",
+          "intermediary": null,
+          "related_reference": "REL202511252354428648"
+        },
+        "all_occurrences": [
+          {
+            "transaction_id": "TXN000298",
+            "message_type": "MT202",
+            "amount": "3236111.38",
+            "currency": "USD",
+            "value_date": "2025-11-25",
+            "ordering_institution": "HSBCGB2LXXX",
+            "beneficiary_institution": "BNPAFRPPXXX",
+            "transaction_reference": "MT202202511252354421564"
+          },
+          {
+            "transaction_id": "TXN000298",
+            "message_type": "MT202",
+            "amount": "3236111.38",
+            "currency": "USD",
+            "value_date": "2025-11-25",
+            "ordering_institution": "HSBCGB2LXXX",
+            "beneficiary_institution": "BNPAFRPPXXX",
+            "transaction_reference": "MT202202511252354421564"
+          },
+          {
+            "transaction_id": "TXN000298",
+            "message_type": "MT202",
+            "amount": "3236111.38",
+            "currency": "USD",
+            "value_date": "2025-11-25",
+            "ordering_institution": "HSBCGB2LXXX",
+            "beneficiary_institution": "BNPAFRPPXXX",
+            "transaction_reference": "MT202202511252354421564"
+          },
+          {
+            "transaction_id": "TXN000298",
+            "message_type": "MT202",
+            "amount": "3236111.38",
+            "currency": "USD",
+            "value_date": "2025-11-25",
+            "ordering_institution": "HSBCGB2LXXX",
+            "beneficiary_institution": "BNPAFRPPXXX",
+            "transaction_reference": "MT202202511252354421564"
+          }
+        ],
+        "duplicate_count": 3
+      },
+      "timestamp": "2025-11-26T00:23:05.771174"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0078",
+      "discrepancy_type": "unmatched_transaction",
+      "severity": "HIGH",
+      "transaction_id": "TXN000025",
+      "description": "Transaction TXN000025 has 1 field mismatch(es)",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "source_transaction": {
+          "message_type": "pacs.008",
+          "transaction_id": "TXN000025",
+          "amount": 2577786.69,
+          "currency": "CHF",
+          "value_date": "2025-11-25",
+          "debtor_name": "Global Trading Ltd",
+          "debtor_account": "GB1046537567574408",
+          "debtor_bic": "UBSWCHZHXXX",
+          "creditor_name": "International Exports SA",
+          "creditor_account": "GB3123334880867307",
+          "creditor_bic": "UBSWCHZHXXX",
+          "remittance_info": "Invoice payment 5589",
+          "instruction_id": "INST202511252354424155",
+          "end_to_end_id": "E2E202511252354421033"
+        },
+        "target_transaction": {
+          "transaction_id": "TXN000025",
+          "message_type": "pacs.008",
+          "amount": "2578559.411096876",
+          "currency": "CHF",
+          "value_date": "2025-11-25",
+          "debtor_name": "Global Trading Ltd",
+          "debtor_account": "GB1046537567574408",
+          "creditor_name": "International Exports SA",
+          "creditor_account": "GB3123334880867307",
+          "end_to_end_id": "E2E202511252354421033"
+        },
+        "field_differences": [
+          {
+            "field": "amount",
+            "payment_value": "2577786.69",
+            "compliance_value": "2578559.411096876"
+          }
+        ],
+        "mismatched_fields": [
+          "amount"
+        ]
+      },
+      "timestamp": "2025-11-26T00:23:05.771246"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0081",
+      "discrepancy_type": "unmatched_transaction",
+      "severity": "HIGH",
+      "transaction_id": "TXN000037",
+      "description": "Transaction TXN000037 has 1 field mismatch(es)",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "source_transaction": {
+          "message_type": "pacs.008",
+          "transaction_id": "TXN000037",
+          "amount": 3139634.11,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "debtor_name": "International Exports SA",
+          "debtor_account": "GB3487004379129709",
+          "debtor_bic": "CITIUS33XXX",
+          "creditor_name": "Acme Corporation",
+          "creditor_account": "GB5962281043936359",
+          "creditor_bic": "BNPAFRPPXXX",
+          "remittance_info": "Invoice payment 8771",
+          "instruction_id": "INST202511252354424354",
+          "end_to_end_id": "E2E202511252354423122"
+        },
+        "target_transaction": {
+          "transaction_id": "TXN000037",
+          "message_type": "pacs.008",
+          "amount": "3140462.643301789",
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "debtor_name": "International Exports SA",
+          "debtor_account": "GB3487004379129709",
+          "creditor_name": "Acme Corporation",
+          "creditor_account": "GB5962281043936359",
+          "end_to_end_id": "E2E202511252354423122"
+        },
+        "field_differences": [
+          {
+            "field": "amount",
+            "payment_value": "3139634.11",
+            "compliance_value": "3140462.643301789"
+          }
+        ],
+        "mismatched_fields": [
+          "amount"
+        ]
+      },
+      "timestamp": "2025-11-26T00:23:05.771297"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0082",
+      "discrepancy_type": "unmatched_transaction",
+      "severity": "HIGH",
+      "transaction_id": "TXN000051",
+      "description": "Transaction TXN000051 has 1 field mismatch(es)",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "source_transaction": {
+          "message_type": "pacs.008",
+          "transaction_id": "TXN000051",
+          "amount": 3279539.02,
+          "currency": "EUR",
+          "value_date": "2025-11-25",
+          "debtor_name": "International Exports SA",
+          "debtor_account": "GB8266713186772618",
+          "debtor_bic": "UBSWCHZHXXX",
+          "creditor_name": "TechVentures Inc",
+          "creditor_account": "GB9906514521813175",
+          "creditor_bic": "UBSWCHZHXXX",
+          "remittance_info": "Invoice payment 1888",
+          "instruction_id": "INST202511252354424379",
+          "end_to_end_id": "E2E202511252354427786"
+        },
+        "target_transaction": {
+          "transaction_id": "TXN000051",
+          "message_type": "pacs.008",
+          "amount": "3279943.671724285",
+          "currency": "EUR",
+          "value_date": "2025-11-25",
+          "debtor_name": "International Exports SA",
+          "debtor_account": "GB8266713186772618",
+          "creditor_name": "TechVentures Inc",
+          "creditor_account": "GB9906514521813175",
+          "end_to_end_id": "E2E202511252354427786"
+        },
+        "field_differences": [
+          {
+            "field": "amount",
+            "payment_value": "3279539.02",
+            "compliance_value": "3279943.671724285"
+          }
+        ],
+        "mismatched_fields": [
+          "amount"
+        ]
+      },
+      "timestamp": "2025-11-26T00:23:05.771313"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0083",
+      "discrepancy_type": "unmatched_transaction",
+      "severity": "HIGH",
+      "transaction_id": "TXN000068",
+      "description": "Transaction TXN000068 has 1 field mismatch(es)",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "source_transaction": {
+          "message_type": "pacs.008",
+          "transaction_id": "TXN000068",
+          "amount": 1407067.27,
+          "currency": "USD",
+          "value_date": "2025-11-25",
+          "debtor_name": "Global Trading Ltd",
+          "debtor_account": "GB6641073648962539",
+          "debtor_bic": "HSBCGB2LXXX",
+          "creditor_name": "International Exports SA",
+          "creditor_account": "GB5396584740624065",
+          "creditor_bic": "CITIUS33XXX",
+          "remittance_info": "Invoice payment 1198",
+          "instruction_id": "INST202511252354427076",
+          "end_to_end_id": "E2E202511252354429355"
+        },
+        "target_transaction": {
+          "transaction_id": "TXN000068",
+          "message_type": "pacs.008",
+          "amount": "1406365.3985506673",
+          "currency": "USD",
+          "value_date": "2025-11-25",
+          "debtor_name": "Global Trading Ltd",
+          "debtor_account": "GB6641073648962539",
+          "creditor_name": "International Exports SA",
+          "creditor_account": "GB5396584740624065",
+          "end_to_end_id": "E2E202511252354429355"
+        },
+        "field_differences": [
+          {
+            "field": "amount",
+            "payment_value": "1407067.27",
+            "compliance_value": "1406365.3985506673"
+          }
+        ],
+        "mismatched_fields": [
+          "amount"
+        ]
+      },
+      "timestamp": "2025-11-26T00:23:05.771328"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0085",
+      "discrepancy_type": "unmatched_transaction",
+      "severity": "HIGH",
+      "transaction_id": "TXN000087",
+      "description": "Transaction TXN000087 has 1 field mismatch(es)",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "source_transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000087",
+          "amount": 2967503.91,
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "instructing_agent": "CHASUS33XXX",
+          "instructed_agent": "CHASUS33XXX",
+          "creditor_institution": "DEUTDEFFXXX",
+          "debtor_institution": "CRESCHZZXXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354427421",
+          "end_to_end_id": "E2E202511252354428113",
+          "purpose": "INTC"
+        },
+        "target_transaction": {
+          "transaction_id": "TXN000087",
+          "message_type": "pacs.009",
+          "amount": "2967503.91",
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "instructing_agent": "CHASUS33XXX",
+          "instructed_agent": "CHASUS33XXX",
+          "end_to_end_id": "E2E202511252354428113"
+        },
+        "field_differences": [
+          {
+            "field": "currency",
+            "payment_value": "GBP",
+            "compliance_value": "JPY"
+          }
+        ],
+        "mismatched_fields": [
+          "currency"
+        ]
+      },
+      "timestamp": "2025-11-26T00:23:05.771361"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0086",
+      "discrepancy_type": "unmatched_transaction",
+      "severity": "HIGH",
+      "transaction_id": "TXN000122",
+      "description": "Transaction TXN000122 has 1 field mismatch(es)",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "source_transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000122",
+          "amount": 1453724.5,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "instructing_agent": "HSBCGB2LXXX",
+          "instructed_agent": "CRESCHZZXXX",
+          "creditor_institution": "HSBCGB2LXXX",
+          "debtor_institution": "BARCGB22XXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354424277",
+          "end_to_end_id": "E2E202511252354428466",
+          "purpose": "INTC"
+        },
+        "target_transaction": {
+          "transaction_id": "TXN000122",
+          "message_type": "pacs.009",
+          "amount": "1454187.7397895362",
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "instructing_agent": "HSBCGB2LXXX",
+          "instructed_agent": "CRESCHZZXXX",
+          "end_to_end_id": "E2E202511252354428466"
+        },
+        "field_differences": [
+          {
+            "field": "amount",
+            "payment_value": "1453724.5",
+            "compliance_value": "1454187.7397895362"
+          }
+        ],
+        "mismatched_fields": [
+          "amount"
+        ]
+      },
+      "timestamp": "2025-11-26T00:23:05.771376"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0087",
+      "discrepancy_type": "unmatched_transaction",
+      "severity": "HIGH",
+      "transaction_id": "TXN000147",
+      "description": "Transaction TXN000147 has 1 field mismatch(es)",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "source_transaction": {
+          "message_type": "pacs.009",
+          "transaction_id": "TXN000147",
+          "amount": 1866850.26,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "instructing_agent": "CITIUS33XXX",
+          "instructed_agent": "DEUTDEFFXXX",
+          "creditor_institution": "DEUTDEFFXXX",
+          "debtor_institution": "DEUTDEFFXXX",
+          "settlement_method": "CLRG",
+          "instruction_id": "INST202511252354429618",
+          "end_to_end_id": "E2E202511252354429088",
+          "purpose": "INTC"
+        },
+        "target_transaction": {
+          "transaction_id": "TXN000147",
+          "message_type": "pacs.009",
+          "amount": "1866850.26",
+          "currency": "CHF",
+          "value_date": "2025-11-25",
+          "instructing_agent": "CITIUS33XXX",
+          "instructed_agent": "DEUTDEFFXXX",
+          "end_to_end_id": "E2E202511252354429088"
+        },
+        "field_differences": [
+          {
+            "field": "currency",
+            "payment_value": "JPY",
+            "compliance_value": "CHF"
+          }
+        ],
+        "mismatched_fields": [
+          "currency"
+        ]
+      },
+      "timestamp": "2025-11-26T00:23:05.771391"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0088",
+      "discrepancy_type": "unmatched_transaction",
+      "severity": "HIGH",
+      "transaction_id": "TXN000154",
+      "description": "Transaction TXN000154 has 1 field mismatch(es)",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "source_transaction": {
+          "message_type": "MT103",
+          "transaction_id": "TXN000154",
+          "transaction_reference": "MT103202511252354427456",
+          "amount": 4274945.38,
+          "currency": "EUR",
+          "value_date": "2025-11-25",
+          "ordering_customer": "Worldwide Logistics",
+          "ordering_institution": "CRESCHZZXXX",
+          "beneficiary_customer": "Acme Corporation",
+          "beneficiary_institution": "BARCGB22XXX",
+          "intermediary_institution": null,
+          "sender_to_receiver_info": "Payment for services 1216",
+          "remittance_info": "Invoice 17968"
+        },
+        "target_transaction": {
+          "transaction_id": "TXN000154",
+          "message_type": "MT103",
+          "amount": "4274945.38",
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "ordering_customer": "Worldwide Logistics",
+          "beneficiary_customer": "Acme Corporation",
+          "transaction_reference": "MT103202511252354427456"
+        },
+        "field_differences": [
+          {
+            "field": "currency",
+            "payment_value": "EUR",
+            "compliance_value": "GBP"
+          }
+        ],
+        "mismatched_fields": [
+          "currency"
+        ]
+      },
+      "timestamp": "2025-11-26T00:23:05.771406"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0089",
+      "discrepancy_type": "unmatched_transaction",
+      "severity": "HIGH",
+      "transaction_id": "TXN000170",
+      "description": "Transaction TXN000170 has 1 field mismatch(es)",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "source_transaction": {
+          "message_type": "MT103",
+          "transaction_id": "TXN000170",
+          "transaction_reference": "MT103202511252354424229",
+          "amount": 1559789.15,
+          "currency": "USD",
+          "value_date": "2025-11-25",
+          "ordering_customer": "Acme Corporation",
+          "ordering_institution": "CITIUS33XXX",
+          "beneficiary_customer": "Worldwide Logistics",
+          "beneficiary_institution": "DEUTDEFFXXX",
+          "intermediary_institution": null,
+          "sender_to_receiver_info": "Payment for services 5399",
+          "remittance_info": "Invoice 32748"
+        },
+        "target_transaction": {
+          "transaction_id": "TXN000170",
+          "message_type": "MT103",
+          "amount": "1559789.15",
+          "currency": "CHF",
+          "value_date": "2025-11-25",
+          "ordering_customer": "Acme Corporation",
+          "beneficiary_customer": "Worldwide Logistics",
+          "transaction_reference": "MT103202511252354424229"
+        },
+        "field_differences": [
+          {
+            "field": "currency",
+            "payment_value": "USD",
+            "compliance_value": "CHF"
+          }
+        ],
+        "mismatched_fields": [
+          "currency"
+        ]
+      },
+      "timestamp": "2025-11-26T00:23:05.771421"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0090",
+      "discrepancy_type": "unmatched_transaction",
+      "severity": "HIGH",
+      "transaction_id": "TXN000204",
+      "description": "Transaction TXN000204 has 1 field mismatch(es)",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "source_transaction": {
+          "message_type": "MT103",
+          "transaction_id": "TXN000204",
+          "transaction_reference": "MT103202511252354421182",
+          "amount": 1175449.04,
+          "currency": "USD",
+          "value_date": "2025-11-25",
+          "ordering_customer": "Worldwide Logistics",
+          "ordering_institution": "BARCGB22XXX",
+          "beneficiary_customer": "Finance Solutions GmbH",
+          "beneficiary_institution": "BARCGB22XXX",
+          "intermediary_institution": null,
+          "sender_to_receiver_info": "Payment for services 8198",
+          "remittance_info": "Invoice 32096"
+        },
+        "target_transaction": {
+          "transaction_id": "TXN000204",
+          "message_type": "MT103",
+          "amount": "1175511.5575905256",
+          "currency": "USD",
+          "value_date": "2025-11-25",
+          "ordering_customer": "Worldwide Logistics",
+          "beneficiary_customer": "Finance Solutions GmbH",
+          "transaction_reference": "MT103202511252354421182"
+        },
+        "field_differences": [
+          {
+            "field": "amount",
+            "payment_value": "1175449.04",
+            "compliance_value": "1175511.5575905256"
+          }
+        ],
+        "mismatched_fields": [
+          "amount"
+        ]
+      },
+      "timestamp": "2025-11-26T00:23:05.771436"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0091",
+      "discrepancy_type": "unmatched_transaction",
+      "severity": "HIGH",
+      "transaction_id": "TXN000228",
+      "description": "Transaction TXN000228 has 1 field mismatch(es)",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "source_transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000228",
+          "transaction_reference": "MT202202511252354425676",
+          "amount": 225970.33,
+          "currency": "USD",
+          "value_date": "2025-11-25",
+          "ordering_institution": "BNPAFRPPXXX",
+          "beneficiary_institution": "DEUTDEFFXXX",
+          "sender_correspondent": "CITIUS33XXX",
+          "receiver_correspondent": "BARCGB22XXX",
+          "intermediary": null,
+          "related_reference": "REL202511252354422169"
+        },
+        "target_transaction": {
+          "transaction_id": "TXN000228",
+          "message_type": "MT202",
+          "amount": "225970.33",
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "ordering_institution": "BNPAFRPPXXX",
+          "beneficiary_institution": "DEUTDEFFXXX",
+          "transaction_reference": "MT202202511252354425676"
+        },
+        "field_differences": [
+          {
+            "field": "currency",
+            "payment_value": "USD",
+            "compliance_value": "JPY"
+          }
+        ],
+        "mismatched_fields": [
+          "currency"
+        ]
+      },
+      "timestamp": "2025-11-26T00:23:05.771453"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0092",
+      "discrepancy_type": "unmatched_transaction",
+      "severity": "HIGH",
+      "transaction_id": "TXN000231",
+      "description": "Transaction TXN000231 has 1 field mismatch(es)",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "source_transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000231",
+          "transaction_reference": "MT202202511252354422058",
+          "amount": 790764.64,
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "ordering_institution": "DEUTDEFFXXX",
+          "beneficiary_institution": "BARCGB22XXX",
+          "sender_correspondent": "UBSWCHZHXXX",
+          "receiver_correspondent": "CRESCHZZXXX",
+          "intermediary": null,
+          "related_reference": "REL202511252354424474"
+        },
+        "target_transaction": {
+          "transaction_id": "TXN000231",
+          "message_type": "MT202",
+          "amount": "789997.950972765",
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "ordering_institution": "DEUTDEFFXXX",
+          "beneficiary_institution": "BARCGB22XXX",
+          "transaction_reference": "MT202202511252354422058"
+        },
+        "field_differences": [
+          {
+            "field": "amount",
+            "payment_value": "790764.64",
+            "compliance_value": "789997.950972765"
+          }
+        ],
+        "mismatched_fields": [
+          "amount"
+        ]
+      },
+      "timestamp": "2025-11-26T00:23:05.771468"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0093",
+      "discrepancy_type": "unmatched_transaction",
+      "severity": "HIGH",
+      "transaction_id": "TXN000232",
+      "description": "Transaction TXN000232 has 1 field mismatch(es)",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "source_transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000232",
+          "transaction_reference": "MT202202511252354423418",
+          "amount": 1221056.44,
+          "currency": "EUR",
+          "value_date": "2025-11-25",
+          "ordering_institution": "CITIUS33XXX",
+          "beneficiary_institution": "CRESCHZZXXX",
+          "sender_correspondent": "HSBCGB2LXXX",
+          "receiver_correspondent": "BNPAFRPPXXX",
+          "intermediary": null,
+          "related_reference": "REL202511252354423999"
+        },
+        "target_transaction": {
+          "transaction_id": "TXN000232",
+          "message_type": "MT202",
+          "amount": "1221707.6881140133",
+          "currency": "EUR",
+          "value_date": "2025-11-25",
+          "ordering_institution": "CITIUS33XXX",
+          "beneficiary_institution": "CRESCHZZXXX",
+          "transaction_reference": "MT202202511252354423418"
+        },
+        "field_differences": [
+          {
+            "field": "amount",
+            "payment_value": "1221056.44",
+            "compliance_value": "1221707.6881140133"
+          }
+        ],
+        "mismatched_fields": [
+          "amount"
+        ]
+      },
+      "timestamp": "2025-11-26T00:23:05.771483"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0094",
+      "discrepancy_type": "unmatched_transaction",
+      "severity": "HIGH",
+      "transaction_id": "TXN000262",
+      "description": "Transaction TXN000262 has 1 field mismatch(es)",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "source_transaction": {
+          "message_type": "MT202",
+          "transaction_id": "TXN000262",
+          "transaction_reference": "MT202202511252354424388",
+          "amount": 2556752.26,
+          "currency": "CHF",
+          "value_date": "2025-11-25",
+          "ordering_institution": "CRESCHZZXXX",
+          "beneficiary_institution": "UBSWCHZHXXX",
+          "sender_correspondent": "CITIUS33XXX",
+          "receiver_correspondent": "CRESCHZZXXX",
+          "intermediary": null,
+          "related_reference": "REL202511252354424422"
+        },
+        "target_transaction": {
+          "transaction_id": "TXN000262",
+          "message_type": "MT202",
+          "amount": "2556752.26",
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "ordering_institution": "CRESCHZZXXX",
+          "beneficiary_institution": "UBSWCHZHXXX",
+          "transaction_reference": "MT202202511252354424388"
+        },
+        "field_differences": [
+          {
+            "field": "currency",
+            "payment_value": "CHF",
+            "compliance_value": "GBP"
+          }
+        ],
+        "mismatched_fields": [
+          "currency"
+        ]
+      },
+      "timestamp": "2025-11-26T00:23:05.771499"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0075",
+      "discrepancy_type": "unmatched_transaction",
+      "severity": "MEDIUM",
+      "transaction_id": "TXN000009",
+      "description": "Transaction TXN000009 has 1 field mismatch(es)",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "source_transaction": {
+          "message_type": "pacs.008",
+          "transaction_id": "TXN000009",
+          "amount": 2301081.0,
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "debtor_name": "Global Trading Ltd",
+          "debtor_account": "GB7486688833487698",
+          "debtor_bic": "DEUTDEFFXXX",
+          "creditor_name": "Global Trading Ltd",
+          "creditor_account": "GB7099143629783925",
+          "creditor_bic": "CHASUS33XXX",
+          "remittance_info": "Invoice payment 2986",
+          "instruction_id": "INST202511252354429318",
+          "end_to_end_id": "E2E202511252354426528"
+        },
+        "target_transaction": {
+          "transaction_id": "TXN000009",
+          "message_type": "pacs.008",
+          "amount": "2301081.0",
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "debtor_name": "Global Trading Ltd",
+          "debtor_account": "GB7486688833487898",
+          "creditor_name": "Global Trading Ltd",
+          "creditor_account": "GB7099143629783925",
+          "end_to_end_id": "E2E202511252354426528"
+        },
+        "field_differences": [
+          {
+            "field": "debtor_account",
+            "payment_value": "GB7486688833487698",
+            "compliance_value": "GB7486688833487898"
+          }
+        ],
+        "mismatched_fields": [
+          "debtor_account"
+        ]
+      },
+      "timestamp": "2025-11-26T00:23:05.771192"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0076",
+      "discrepancy_type": "unmatched_transaction",
+      "severity": "MEDIUM",
+      "transaction_id": "TXN000019",
+      "description": "Transaction TXN000019 has 1 field mismatch(es)",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "source_transaction": {
+          "message_type": "pacs.008",
+          "transaction_id": "TXN000019",
+          "amount": 2449306.38,
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "debtor_name": "Trading Partners LLC",
+          "debtor_account": "GB1722916697834392",
+          "debtor_bic": "UBSWCHZHXXX",
+          "creditor_name": "Acme Corporation",
+          "creditor_account": "GB6809758682620759",
+          "creditor_bic": "CITIUS33XXX",
+          "remittance_info": "Invoice payment 6199",
+          "instruction_id": "INST202511252354424026",
+          "end_to_end_id": "E2E202511252354427961"
+        },
+        "target_transaction": {
+          "transaction_id": "TXN000019",
+          "message_type": "pacs.008",
+          "amount": "2449306.38",
+          "currency": "JPY",
+          "value_date": "2025-11-25",
+          "debtor_name": "Trading Partners LLC LTD",
+          "debtor_account": "GB1722916697834392",
+          "creditor_name": "Acme Corporation",
+          "creditor_account": "GB6809758682620759",
+          "end_to_end_id": "E2E202511252354427961"
+        },
+        "field_differences": [
+          {
+            "field": "debtor_name",
+            "payment_value": "Trading Partners LLC",
+            "compliance_value": "Trading Partners LLC LTD"
+          }
+        ],
+        "mismatched_fields": [
+          "debtor_name"
+        ]
+      },
+      "timestamp": "2025-11-26T00:23:05.771213"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0077",
+      "discrepancy_type": "unmatched_transaction",
+      "severity": "MEDIUM",
+      "transaction_id": "TXN000024",
+      "description": "Transaction TXN000024 has 1 field mismatch(es)",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "source_transaction": {
+          "message_type": "pacs.008",
+          "transaction_id": "TXN000024",
+          "amount": 90440.17,
+          "currency": "EUR",
+          "value_date": "2025-11-25",
+          "debtor_name": "Acme Corporation",
+          "debtor_account": "GB8143177811271671",
+          "debtor_bic": "CITIUS33XXX",
+          "creditor_name": "Trading Partners LLC",
+          "creditor_account": "GB1377642699149977",
+          "creditor_bic": "BARCGB22XXX",
+          "remittance_info": "Invoice payment 7976",
+          "instruction_id": "INST202511252354428345",
+          "end_to_end_id": "E2E202511252354422653"
+        },
+        "target_transaction": {
+          "transaction_id": "TXN000024",
+          "message_type": "pacs.008",
+          "amount": "90440.17",
+          "currency": "EUR",
+          "value_date": "2025-11-25",
+          "debtor_name": "Acme Corporation",
+          "debtor_account": "GB8143577811271671",
+          "creditor_name": "Trading Partners LLC",
+          "creditor_account": "GB1377642699149977",
+          "end_to_end_id": "E2E202511252354422653"
+        },
+        "field_differences": [
+          {
+            "field": "debtor_account",
+            "payment_value": "GB8143177811271671",
+            "compliance_value": "GB8143577811271671"
+          }
+        ],
+        "mismatched_fields": [
+          "debtor_account"
+        ]
+      },
+      "timestamp": "2025-11-26T00:23:05.771229"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0079",
+      "discrepancy_type": "unmatched_transaction",
+      "severity": "MEDIUM",
+      "transaction_id": "TXN000026",
+      "description": "Transaction TXN000026 has 1 field mismatch(es)",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "source_transaction": {
+          "message_type": "pacs.008",
+          "transaction_id": "TXN000026",
+          "amount": 2078046.4,
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "debtor_name": "Finance Solutions GmbH",
+          "debtor_account": "GB9870591098427379",
+          "debtor_bic": "BARCGB22XXX",
+          "creditor_name": "Acme Corporation",
+          "creditor_account": "GB9796372798704008",
+          "creditor_bic": "CHASUS33XXX",
+          "remittance_info": "Invoice payment 7364",
+          "instruction_id": "INST202511252354425203",
+          "end_to_end_id": "E2E202511252354427639"
+        },
+        "target_transaction": {
+          "transaction_id": "TXN000026",
+          "message_type": "pacs.008",
+          "amount": "2078046.4",
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "debtor_name": "Finance Solutions GmbH",
+          "debtor_account": "GB9870891098427379",
+          "creditor_name": "Acme Corporation",
+          "creditor_account": "GB9796372798704008",
+          "end_to_end_id": "E2E202511252354427639"
+        },
+        "field_differences": [
+          {
+            "field": "debtor_account",
+            "payment_value": "GB9870591098427379",
+            "compliance_value": "GB9870891098427379"
+          }
+        ],
+        "mismatched_fields": [
+          "debtor_account"
+        ]
+      },
+      "timestamp": "2025-11-26T00:23:05.771262"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0080",
+      "discrepancy_type": "unmatched_transaction",
+      "severity": "MEDIUM",
+      "transaction_id": "TXN000034",
+      "description": "Transaction TXN000034 has 1 field mismatch(es)",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "source_transaction": {
+          "message_type": "pacs.008",
+          "transaction_id": "TXN000034",
+          "amount": 427002.65,
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "debtor_name": "TechVentures Inc",
+          "debtor_account": "GB8326617254761239",
+          "debtor_bic": "UBSWCHZHXXX",
+          "creditor_name": "Global Trading Ltd",
+          "creditor_account": "GB6161224251891923",
+          "creditor_bic": "CITIUS33XXX",
+          "remittance_info": "Invoice payment 8887",
+          "instruction_id": "INST202511252354429354",
+          "end_to_end_id": "E2E202511252354421239"
+        },
+        "target_transaction": {
+          "transaction_id": "TXN000034",
+          "message_type": "pacs.008",
+          "amount": "427002.65",
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "debtor_name": "TechVentures Inc",
+          "debtor_account": "GB8326617259761239",
+          "creditor_name": "Global Trading Ltd",
+          "creditor_account": "GB6161224251891923",
+          "end_to_end_id": "E2E202511252354421239"
+        },
+        "field_differences": [
+          {
+            "field": "debtor_account",
+            "payment_value": "GB8326617254761239",
+            "compliance_value": "GB8326617259761239"
+          }
+        ],
+        "mismatched_fields": [
+          "debtor_account"
+        ]
+      },
+      "timestamp": "2025-11-26T00:23:05.771278"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0084",
+      "discrepancy_type": "unmatched_transaction",
+      "severity": "MEDIUM",
+      "transaction_id": "TXN000072",
+      "description": "Transaction TXN000072 has 1 field mismatch(es)",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "source_transaction": {
+          "message_type": "pacs.008",
+          "transaction_id": "TXN000072",
+          "amount": 3545914.29,
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "debtor_name": "Global Trading Ltd",
+          "debtor_account": "GB9520585119109228",
+          "debtor_bic": "DEUTDEFFXXX",
+          "creditor_name": "TechVentures Inc",
+          "creditor_account": "GB7404467384120031",
+          "creditor_bic": "DEUTDEFFXXX",
+          "remittance_info": "Invoice payment 8028",
+          "instruction_id": "INST202511252354428448",
+          "end_to_end_id": "E2E202511252354429281"
+        },
+        "target_transaction": {
+          "transaction_id": "TXN000072",
+          "message_type": "pacs.008",
+          "amount": "3545914.29",
+          "currency": "GBP",
+          "value_date": "2025-11-25",
+          "debtor_name": "Global Trading Ltd",
+          "debtor_account": "GB9520585119409228",
+          "creditor_name": "TechVentures Inc",
+          "creditor_account": "GB7404467384120031",
+          "end_to_end_id": "E2E202511252354429281"
+        },
+        "field_differences": [
+          {
+            "field": "debtor_account",
+            "payment_value": "GB9520585119109228",
+            "compliance_value": "GB9520585119409228"
+          }
+        ],
+        "mismatched_fields": [
+          "debtor_account"
+        ]
+      },
+      "timestamp": "2025-11-26T00:23:05.771343"
+    },
+    {
+      "discrepancy_id": "DISC-RUN-20251126002305-56b3-0095",
+      "discrepancy_type": "count_discrepancy",
+      "severity": "MEDIUM",
+      "transaction_id": null,
+      "description": "Total_Transactions count mismatch: 300 vs 307",
+      "source_system": "Payment Platform",
+      "target_system": "Compliance System",
+      "details": {
+        "category": "total_transactions",
+        "source_count": 300,
+        "target_count": 307,
+        "difference": 7,
+        "percentage_difference": 2.33,
+        "more_in": "Compliance System"
+      },
+      "timestamp": "2025-11-26T00:23:05.771519"
+    }
+  ],
+  "success": true,
+  "error_message": null
+}
