@@ -302,10 +302,13 @@ class ReconciliationEngine:
 
 def load_transactions():
     """Load transaction data from JSON files"""
-    with open('/Users/ritesh/Projects/reconciliation-system/data/payment_platform_transactions.json', 'r') as f:
+    from pathlib import Path
+    base_dir = Path(__file__).parent.parent / 'data'
+
+    with open(base_dir / 'payment_platform_transactions.json', 'r') as f:
         payment_txns = json.load(f)
 
-    with open('/Users/ritesh/Projects/reconciliation-system/data/compliance_transactions.json', 'r') as f:
+    with open(base_dir / 'compliance_transactions.json', 'r') as f:
         compliance_txns = json.load(f)
 
     return payment_txns, compliance_txns
@@ -313,7 +316,10 @@ def load_transactions():
 
 def save_reconciliation_results(results: Dict):
     """Save reconciliation results to JSON"""
-    with open('/Users/ritesh/Projects/reconciliation-system/data/reconciliation_results.json', 'w') as f:
+    from pathlib import Path
+    base_dir = Path(__file__).parent.parent / 'data'
+
+    with open(base_dir / 'reconciliation_results.json', 'w') as f:
         json.dump(results, f, indent=2)
     print("\nResults saved to reconciliation_results.json")
 
